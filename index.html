@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Zinga Financial Services — homepage designs</title>
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Schibsted+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #13233f; --sky: #3fa9e0; --muted: #4a5a6e; --line: #e2e7ec; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Figtree', system-ui, sans-serif; color: var(--navy); background: #f4f6f9; -webkit-font-smoothing: antialiased; }
+  header { background: #fff; border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  header .wrap { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  header img { height: 42px; width: auto; display: block; }
+  header span { font-size: 14px; color: var(--muted); }
+  main .wrap { padding-top: 56px; padding-bottom: 72px; }
+  .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #0b6fa4; margin: 0 0 14px; }
+  .eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--sky); }
+  h1 { font-family: 'Schibsted Grotesk', sans-serif; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 14px; }
+  .lede { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 40px; line-height: 1.6; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; }
+  .card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .25s ease, box-shadow .25s ease, border-color .2s ease; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(19, 35, 63, .12); border-color: var(--navy); }
+  .thumb { aspect-ratio: 720 / 550; overflow: hidden; border-bottom: 1px solid var(--line); background: #e9eef2; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .6s ease; }
+  .card:hover .thumb img { transform: scale(1.03); }
+  .body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px; }
+  .tag { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: #eaf6fc; color: #0b6fa4; }
+  .tag.new { background: #e8f6ef; color: #0c7f50; }
+  .body h2 { font-family: 'Schibsted Grotesk', sans-serif; font-size: 26px; letter-spacing: -.02em; margin: 6px 0 0; }
+  .body p { margin: 0; color: var(--muted); line-height: 1.55; }
+  .go { margin-top: 10px; font-weight: 700; color: #0b6fa4; }
+  .card:hover .go { color: var(--navy); }
+  footer { text-align: center; font-size: 13px; color: var(--muted); padding: 0 24px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="logo.png" alt="Zinga Financial Services" width="99" height="42">
+    <span>Homepage design review</span>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Website redesign</p>
+    <h1>Two homepage options</h1>
+    <p class="lede">Open each version to scroll through the full homepage. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
+    <div class="grid">
+      <a class="card" href="new/">
+        <div class="thumb"><img src="thumb-new.jpg" alt="Preview of the new homepage" width="720" height="550"></div>
+        <div class="body">
+          <span class="tag new">New · after our call</span>
+          <h2>New homepage</h2>
+          <p>Design option 1's layout and bold headings, with fuller imagery: step-by-step mortgage enquiry, lender logos, calculators, protection and local expertise.</p>
+          <span class="go">View the new homepage →</span>
+        </div>
+      </a>
+      <a class="card" href="previous/">
+        <div class="thumb"><img src="thumb-previous.jpg" alt="Preview of the previous homepage" width="720" height="550"></div>
+        <div class="body">
+          <span class="tag">Previous</span>
+          <h2>Previous homepage</h2>
+          <p>The earlier version shown as design 2 in our call, kept here for comparison.</p>
+          <span class="go">View the previous homepage →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+<footer>Preview for Zinga Financial Services. Content, claims and images are still to be confirmed before launch.</footer>
+</body>
+</html>
