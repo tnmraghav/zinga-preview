@@ -973,6 +973,9 @@ body.drawer-open { overflow: hidden; }
 .hp-hero-solo { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px; max-width: 980px; padding-top: clamp(16px, 3vw, 40px); padding-bottom: clamp(112px, 10vw, 168px); }
 .hp-hero-solo .hp-h1 { font-size: clamp(46px, 7.4vw, 108px); line-height: .98; }
 .hp-hero-solo .hp-lede { max-width: 640px; }
+/* Second sentence of the hero heading (client copy, 8 Oct): own line, smaller and softer */
+.hp-h1-soft { display: block; margin-top: .26em; font-size: max(.44em, 25px); font-weight: 600; line-height: 1.12; letter-spacing: -.025em; color: #3b5578; }
+.hp-hero-dark .hp-h1-soft { color: #dbe6f2; }
 .hp-hero-solo .hp-cta-row, .hp-hero-solo .hp-ticks, .hp-hero-solo .hp-badges, .hp-hero-solo .hp-trust-row { justify-content: center; }
 .hp-hero-solo .hp-eyebrow::after { content: ""; width: 28px; height: 3px; background: var(--sky); flex-shrink: 0; }
 @media (max-width: 560px) { .hp-hero-solo .hp-eyebrow::before, .hp-hero-solo .hp-eyebrow::after { display: none; } }
