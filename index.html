@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Zinga Financial Services — homepage designs</title>
+<title>Zinga Financial Services — homepage options</title>
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Schibsted+Grotesk:wght@700;800&display=swap" rel="stylesheet">
@@ -35,6 +35,12 @@
   .body p { margin: 0; color: var(--muted); line-height: 1.55; }
   .go { margin-top: 10px; font-weight: 700; color: #0b6fa4; }
   .card:hover .go { color: var(--navy); }
+  .changes { margin: 32px 0 0; font-size: 16px; max-width: 860px; }
+  .earlier { margin-top: 56px; }
+  .earlier h3 { font-family: 'Schibsted Grotesk', sans-serif; font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
+  .earlier > p { margin: 0 0 20px; color: var(--muted); }
+  .grid.small { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .grid.small .body h2 { font-size: 20px; }
   footer { text-align: center; font-size: 13px; color: var(--muted); padding: 0 24px 40px; }
 </style>
 </head>
@@ -48,14 +54,39 @@
 <main>
   <div class="wrap">
     <p class="eyebrow">Website redesign</p>
-    <h1>Two homepage options</h1>
-    <p class="lede">Open each version to scroll through the full homepage. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
+    <h1>Two hero options</h1>
+    <p class="lede">As discussed on 8 October, here is the simplified homepage with two choices for the top of the page: a looping video or a photo, each behind a dark overlay. The rest of the page is the same in both. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
     <div class="grid">
+      <a class="card" href="hero-video/">
+        <div class="thumb"><img src="thumb-hero-video.jpg" alt="Preview of the homepage with a video background" width="720" height="550"></div>
+        <div class="body">
+          <span class="tag new">Option A · 9 Oct</span>
+          <h2>Video background</h2>
+          <p>A slow, silent loop of home and advice scenes plays behind the heading and motto. It pauses for visitors who prefer reduced motion and has a pause button. Our sample is made from the site's illustrative images; a filmed or licensed clip can replace it.</p>
+          <span class="go">View option A →</span>
+        </div>
+      </a>
+      <a class="card" href="hero-photo/">
+        <div class="thumb"><img src="thumb-hero-photo.jpg" alt="Preview of the homepage with a photo background" width="720" height="550"></div>
+        <div class="body">
+          <span class="tag new">Option B · 9 Oct</span>
+          <h2>Photo background</h2>
+          <p>One full-width photo behind the message: lighter to load and calmer than a video. The photo can be changed at any time, ideally to a real photo of the Zinga team or office.</p>
+          <span class="go">View option B →</span>
+        </div>
+      </a>
+    </div>
+    <p class="lede changes">What changed since the call: the line above the heading and the FCA number in the top bar are removed; the repeated sections are gone (“Not just a comparison site”, “What can we help with?”, the three steps, advisers and protection — they now live on their own pages); About Zinga shows lenders, Google and Trustpilot, with the whole-of-market, dedicated adviser and end-to-end points underneath; and the calculators sit higher up.</p>
+
+    <section class="earlier">
+      <h3>Earlier versions</h3>
+      <p>Kept for comparison.</p>
+      <div class="grid small">
       <a class="card" href="new/">
         <div class="thumb"><img src="thumb-new.jpg" alt="Preview of the new homepage" width="720" height="550"></div>
         <div class="body">
-          <span class="tag new">New · updated 2 Oct</span>
-          <h2>New homepage</h2>
+          <span class="tag">2 Oct</span>
+          <h2>New homepage (2 Oct)</h2>
           <p>Design option 1's layout and bold headings. Updated after your feedback: the hero now leads with the message and your motto, “Making your journey part of ours too.” It also has the step-by-step mortgage enquiry, lender logos, calculators, protection and local expertise.</p>
           <span class="go">View the new homepage →</span>
         </div>
@@ -69,7 +100,8 @@
           <span class="go">View the previous homepage →</span>
         </div>
       </a>
-    </div>
+      </div>
+    </section>
   </div>
 </main>
 <footer>Preview for Zinga Financial Services. Content, claims and images are still to be confirmed before launch.</footer>
