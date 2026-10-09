@@ -995,6 +995,17 @@ body.drawer-open { overflow: hidden; }
 .hp-hero-pause { position: absolute; right: 16px; bottom: 96px; z-index: 2; padding: 6px 12px; border: 1px solid rgba(255, 255, 255, .5); border-radius: 999px; background: rgba(14, 35, 64, .45); color: #fff; font-family: inherit; font-size: 12px; font-weight: 600; line-height: 1.2; letter-spacing: .02em; cursor: pointer; }
 .hp-hero-pause:hover, .hp-hero-pause:focus-visible { background: rgba(14, 35, 64, .8); border-color: #fff; }
 @media (prefers-reduced-motion: reduce) { .hp-hero-media { animation: none; } }
+/* Option C (9 Oct): hero photo/video runs up behind a transparent menu bar; the bar turns white again on scroll or when a menu opens */
+.logo-light { display: none; }
+.header-overlay .site-header { transition: background-color var(--t-med) ease, box-shadow var(--t-med) ease, border-color var(--t-med) ease; }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) { background: transparent; border-bottom-color: rgba(255, 255, 255, .16); }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) .logo-dark { display: none; }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) .logo-light { display: block; }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) :is(.main-nav > a, .mega-trigger, .header-phone, .header-phone small) { color: #fff; }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) :is(.main-nav > a, .mega-trigger):is(:hover, [aria-current="page"]) { background: rgba(255, 255, 255, .14); }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) .header-cta { background: #fff; border-color: #fff; color: var(--hp-ink); }
+.header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) .menu-toggle { background: rgba(255, 255, 255, .14); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4); }
+.header-overlay .hp-hero { margin-top: -73px; padding-top: calc(73px + clamp(40px, 6vw, 84px)); } /* 72px bar + 1px border */
 
 /* Journey selector (overlaps the hero) */
 .hp-journey-wrap { position: relative; z-index: 2; }

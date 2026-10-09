@@ -17,12 +17,12 @@
   header .wrap { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   header img { height: 42px; width: auto; display: block; }
   header span { font-size: 14px; color: var(--muted); }
-  main .wrap { padding-top: 56px; padding-bottom: 72px; }
+  main .wrap { max-width: 1240px; padding-top: 56px; padding-bottom: 72px; }
   .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #0b6fa4; margin: 0 0 14px; }
   .eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--sky); }
   h1 { font-family: 'Schibsted Grotesk', sans-serif; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 14px; }
   .lede { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 40px; line-height: 1.6; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px; }
   .card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .25s ease, box-shadow .25s ease, border-color .2s ease; }
   .card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(19, 35, 63, .12); border-color: var(--navy); }
   .thumb { aspect-ratio: 720 / 550; overflow: hidden; border-bottom: 1px solid var(--line); background: #e9eef2; }
@@ -54,8 +54,8 @@
 <main>
   <div class="wrap">
     <p class="eyebrow">Website redesign</p>
-    <h1>Two hero options</h1>
-    <p class="lede">As discussed on 8 October, here is the simplified homepage with two choices for the top of the page: a looping video or a photo, each behind a dark overlay. The rest of the page is the same in both. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
+    <h1>Three hero options</h1>
+    <p class="lede">As discussed on 8 October, here is the simplified homepage with three choices for the top of the page: a looping video, a photo, or a photo that also runs up behind the menu. Each sits behind a dark overlay, and the rest of the page is the same in all three. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
     <div class="grid">
       <a class="card" href="hero-video/">
         <div class="thumb"><img src="thumb-hero-video.jpg" alt="Preview of the homepage with a video background" width="720" height="550"></div>
@@ -73,6 +73,15 @@
           <h2>Photo background</h2>
           <p>One full-width photo behind the message: lighter to load and calmer than a video. The photo can be changed at any time, ideally to a real photo of the Zinga team or office.</p>
           <span class="go">View option B →</span>
+        </div>
+      </a>
+      <a class="card" href="hero-photo-full/">
+        <div class="thumb"><img src="thumb-hero-photo-full.jpg" alt="Preview of the homepage with the photo running behind the menu" width="720" height="550"></div>
+        <div class="body">
+          <span class="tag new">Option C · 9 Oct</span>
+          <h2>Photo behind the menu</h2>
+          <p>The same photo, but it runs right up behind the menu bar, which turns transparent with a white logo. It switches back to the normal white menu as soon as you scroll or open a menu. This also works with the video.</p>
+          <span class="go">View option C →</span>
         </div>
       </a>
     </div>
