@@ -972,8 +972,22 @@ body.drawer-open { overflow: hidden; }
 /* Message-led hero (2 Oct): centred copy, no photo, motto under the heading */
 .hp-hero-solo { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px; max-width: 980px; padding-top: clamp(16px, 3vw, 40px); padding-bottom: clamp(112px, 10vw, 168px); }
 .hp-hero-solo .hp-h1 { font-size: clamp(46px, 7.4vw, 108px); line-height: .98; }
+/* On phones, size the heading so its longer line ("Every mortgage", about 7.4em in the widest font option) fits
+   between the 24px gutters; desktop sizes are unchanged. */
+.hp-hero-solo .hp-h1 { font-size: min(clamp(46px, 7.4vw, 108px), calc((100vw - 48px) / 7.6)); }
 .hp-hero-solo .hp-lede { max-width: 640px; }
+/* Hero heading lines ("Every mortgage" / "has a purpose."): each phrase stays together (client, 13 Oct). */
+.hp-h1-line { display: block; }
 /* Second sentence of the hero heading (client copy, 8 Oct): own line, smaller and softer */
+/* Heading font choice (Site settings → Home page → Heading font). The alternatives are wider and rounder than
+   Schibsted Grotesk, so the hero heading gets a little more line and letter spacing (the "g"s in "mortgage" no longer crowd the next line). */
+html.hf-jakarta { --hp-display: 'Plus Jakarta Sans', 'Figtree', system-ui, sans-serif; }
+html.hf-manrope { --hp-display: 'Manrope', 'Figtree', system-ui, sans-serif; }
+html.hf-dm-sans { --hp-display: 'DM Sans', 'Figtree', system-ui, sans-serif; }
+html.hf-figtree { --hp-display: 'Figtree', system-ui, sans-serif; }
+html:not(.hf-schibsted) .hp-hero-solo .hp-h1 { line-height: 1.04; letter-spacing: -.03em; }
+html.hf-jakarta .hp-hero-solo .hp-h1, html.hf-manrope .hp-hero-solo .hp-h1, html.hf-figtree .hp-hero-solo .hp-h1 { font-weight: 800; }
+html:not(.hf-schibsted) .hp-h1-soft { letter-spacing: -.02em; }
 .hp-h1-soft { display: block; margin-top: .26em; font-size: max(.44em, 25px); font-weight: 600; line-height: 1.12; letter-spacing: -.025em; color: #3b5578; }
 .hp-hero-dark .hp-h1-soft { color: #00baff; } /* the blue of the bar under the Z in the logo (client, 13 Oct) */
 .hp-hero-solo .hp-cta-row, .hp-hero-solo .hp-ticks, .hp-hero-solo .hp-badges, .hp-hero-solo .hp-trust-row { justify-content: center; }
