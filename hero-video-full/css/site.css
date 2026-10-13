@@ -1009,6 +1009,12 @@ body.drawer-open { overflow: hidden; }
 .header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) .header-cta { background: #fff; border-color: #fff; color: var(--hp-ink); }
 .header-overlay .site-header:not(.scrolled):not(:has(.mega.open)) .menu-toggle { background: rgba(255, 255, 255, .14); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4); }
 .header-overlay .hp-hero { margin-top: -73px; padding-top: calc(73px + clamp(40px, 6vw, 84px)); } /* 72px bar + 1px border */
+/* Phones (client, 12 Oct: "the picture looks odd"): the tall, narrow hero cropped the photo to a sliver of jumper and hands.
+   Show a wider slice of the scene behind the logo and heading instead, fading into navy below. */
+@media (max-width: 700px) {
+  .hp-hero-dark .hp-hero-media { height: min(100%, 135vw); object-position: 42% 0;
+    -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+}
 
 /* Journey selector (overlaps the hero) */
 .hp-journey-wrap { position: relative; z-index: 2; }
