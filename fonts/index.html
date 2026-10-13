@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Zinga Financial Services — heading font options</title>
+<link rel="icon" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Schibsted+Grotesk:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Manrope:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,600;9..40,700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #13233f; --ink: #0e2340; --sky: #3fa9e0; --muted: #4a5a6e; --line: #e2e7ec; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Figtree', system-ui, sans-serif; color: var(--navy); background: #f4f6f9; -webkit-font-smoothing: antialiased; }
+  header { background: #fff; border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+  header .wrap { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  header img { height: 42px; width: auto; display: block; }
+  header a { font-size: 14px; color: #0b6fa4; font-weight: 600; text-decoration: none; }
+  main .wrap { padding-top: 48px; padding-bottom: 72px; }
+  .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #0b6fa4; margin: 0 0 14px; }
+  .eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--sky); }
+  h1.page { font-family: 'Figtree', sans-serif; font-weight: 800; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -.02em; margin: 0 0 12px; }
+  .lede { font-size: 18px; color: var(--muted); max-width: 720px; margin: 0 0 36px; line-height: 1.6; }
+  .option { background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin-bottom: 28px; }
+  .option-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; padding: 18px 24px; border-bottom: 1px solid var(--line); }
+  .option-head h2 { margin: 0; font-size: 20px; font-weight: 700; }
+  .option-head p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: #eaf6fc; color: #0b6fa4; margin-left: 8px; vertical-align: 2px; }
+  .tag.rec { background: #e8f6ef; color: #0c7f50; }
+  .stage { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 0; }
+  .hero { position: relative; color: #fff; text-align: center; padding: 48px 28px 52px; background: var(--ink) url("../hero-photo-full/storage/stock/hero.jpg") center / cover no-repeat; isolation: isolate; }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(14, 35, 64, .70) 0%, rgba(14, 35, 64, .52) 42%, rgba(14, 35, 64, .80) 100%); }
+  .hero h3 { margin: 0 auto; max-width: 760px; font-size: clamp(40px, 5.2vw, 72px); line-height: 1.04; text-wrap: balance; text-shadow: 0 1px 18px rgba(14, 35, 64, .55); }
+  .hero h3 span { display: block; margin-top: .26em; font-size: max(.44em, 24px); line-height: 1.14; color: #dbe6f2; }
+  .hero p { margin: 18px auto 0; max-width: 560px; font-size: 16px; line-height: 1.6; color: #dbe3ec; }
+  .phone { border-left: 1px solid var(--line); background: #e9eef2; display: flex; justify-content: center; align-items: center; padding: 24px 0; }
+  .phone .hero { width: 260px; border-radius: 22px; padding: 34px 16px 36px; box-shadow: 0 20px 40px -24px rgba(14, 35, 64, .6); background-position: 42% 0; }
+  .phone .hero h3 { font-size: 38px; line-height: 1.04; }
+  .phone .hero h3 span { font-size: 21px; }
+  .phone .hero p { font-size: 13px; }
+  .label { position: absolute; top: 10px; left: 12px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .7); }
+  /* The fonts */
+  .f-schibsted h3 { font-family: 'Schibsted Grotesk', sans-serif; font-weight: 700; letter-spacing: -.035em; line-height: .98; }
+  .f-schibsted h3 span { font-weight: 600; letter-spacing: -.025em; }
+  .f-jakarta h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; letter-spacing: -.03em; }
+  .f-jakarta h3 span { font-weight: 600; letter-spacing: -.02em; }
+  .f-manrope h3 { font-family: 'Manrope', sans-serif; font-weight: 800; letter-spacing: -.03em; }
+  .f-manrope h3 span { font-weight: 600; letter-spacing: -.02em; }
+  .f-dmsans h3 { font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: -.035em; }
+  .f-dmsans h3 span { font-weight: 600; letter-spacing: -.02em; }
+  .f-figtree h3 { font-family: 'Figtree', sans-serif; font-weight: 800; letter-spacing: -.025em; }
+  .f-figtree h3 span { font-weight: 600; letter-spacing: -.015em; }
+  @media (max-width: 860px) { .stage { grid-template-columns: 1fr; } .phone { border-left: 0; border-top: 1px solid var(--line); } }
+  footer { text-align: center; font-size: 13px; color: var(--muted); padding: 0 24px 40px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="../logo.png" alt="Zinga Financial Services" width="99" height="42">
+    <a href="../">← All homepage options</a>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <p class="eyebrow">Heading font</p>
+    <h1 class="page">Five heading fonts to choose from</h1>
+    <p class="lede">The same hero in each font, on desktop and on a phone. Only the big headings change; the body text stays as it is. Tell us which one you prefer and we'll use it across the site.</p>
+
+    <!-- Each option: desktop hero + phone hero -->
+    <section class="option f-schibsted">
+      <div class="option-head"><h2>1. Schibsted Grotesk <span class="tag">Current</span></h2><p>What the site uses today: tight and condensed.</p></div>
+      <div class="stage">
+        <div class="hero"><span class="label">Desktop</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3><p>Your dedicated adviser takes the time to listen, compares lenders across the market and explains your options clearly—so you can make an informed decision that’s right for you.</p></div>
+        <div class="phone"><div class="hero"><span class="label">Phone</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3></div></div>
+      </div>
+    </section>
+
+    <section class="option f-jakarta">
+      <div class="option-head"><h2>2. Plus Jakarta Sans <span class="tag rec">Our pick</span></h2><p>Modern and confident, with open, rounded letters; popular with finance brands.</p></div>
+      <div class="stage">
+        <div class="hero"><span class="label">Desktop</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3><p>Your dedicated adviser takes the time to listen, compares lenders across the market and explains your options clearly—so you can make an informed decision that’s right for you.</p></div>
+        <div class="phone"><div class="hero"><span class="label">Phone</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3></div></div>
+      </div>
+    </section>
+
+    <section class="option f-manrope">
+      <div class="option-head"><h2>3. Manrope</h2><p>Clean and geometric, slightly more technical in feel.</p></div>
+      <div class="stage">
+        <div class="hero"><span class="label">Desktop</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3><p>Your dedicated adviser takes the time to listen, compares lenders across the market and explains your options clearly—so you can make an informed decision that’s right for you.</p></div>
+        <div class="phone"><div class="hero"><span class="label">Phone</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3></div></div>
+      </div>
+    </section>
+
+    <section class="option f-dmsans">
+      <div class="option-head"><h2>4. DM Sans</h2><p>Simple, friendly and very readable at every size.</p></div>
+      <div class="stage">
+        <div class="hero"><span class="label">Desktop</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3><p>Your dedicated adviser takes the time to listen, compares lenders across the market and explains your options clearly—so you can make an informed decision that’s right for you.</p></div>
+        <div class="phone"><div class="hero"><span class="label">Phone</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3></div></div>
+      </div>
+    </section>
+
+    <section class="option f-figtree">
+      <div class="option-head"><h2>5. Figtree</h2><p>The site's body font, in bold, so headings and text match.</p></div>
+      <div class="stage">
+        <div class="hero"><span class="label">Desktop</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3><p>Your dedicated adviser takes the time to listen, compares lenders across the market and explains your options clearly—so you can make an informed decision that’s right for you.</p></div>
+        <div class="phone"><div class="hero"><span class="label">Phone</span><h3>Every mortgage has a purpose. <span>We take the time to understand yours.</span></h3></div></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer>Preview for Zinga Financial Services. Fonts are free Google Fonts, licensed for commercial use.</footer>
+</body>
+</html>

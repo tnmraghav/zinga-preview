@@ -35,6 +35,10 @@
   .body p { margin: 0; color: var(--muted); line-height: 1.55; }
   .go { margin-top: 10px; font-weight: 700; color: #0b6fa4; }
   .card:hover .go { color: var(--navy); }
+  .callout { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; background: #fff; border: 1px solid var(--line); border-left: 4px solid #0c7f50; border-radius: 12px; padding: 18px 22px; margin: 0 0 32px; text-decoration: none; color: inherit; }
+  .callout strong { font-size: 18px; }
+  .callout span { color: var(--muted); }
+  .callout:hover { border-color: var(--navy); }
   .changes { margin: 32px 0 0; font-size: 16px; max-width: 860px; }
   .earlier { margin-top: 56px; }
   .earlier h3 { font-family: 'Schibsted Grotesk', sans-serif; font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
@@ -56,6 +60,7 @@
     <p class="eyebrow">Website redesign</p>
     <h1>Four hero options: option C chosen</h1>
     <p class="lede">As discussed on 8 October, here is the simplified homepage with four choices for the top of the page: a looping video or a photo, each either below the menu or running up behind it. Each sits behind a dark overlay, and the rest of the page is the same in all four. On 12 October you chose option C; it now has a better photo crop on phones, and the motto line under the heading has been removed in all four. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
+    <a class="callout" href="fonts/"><div><strong>New: heading font options</strong><br><span>Five fonts for “Every mortgage has a purpose.”, on desktop and phone. Pick the one you like best.</span></div><span class="go">Compare fonts →</span></a>
     <div class="grid">
       <a class="card" href="hero-video/">
         <div class="thumb"><img src="thumb-hero-video.jpg" alt="Preview of the homepage with a video background" width="720" height="550"></div>
