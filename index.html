@@ -39,6 +39,12 @@
   .callout strong { font-size: 18px; }
   .callout span { color: var(--muted); }
   .callout:hover { border-color: var(--navy); }
+  .fonts-pick { margin: 0 0 56px; }
+  .pick-h { font-family: 'Schibsted Grotesk', sans-serif; font-size: 26px; letter-spacing: -.02em; margin: 0 0 6px; }
+  .pick-lede { margin: 0 0 20px; color: var(--muted); max-width: 760px; }
+  .grid.three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+  .pick-more { margin: 18px 0 0; color: var(--muted); }
+  .pick-more a { color: #0b6fa4; font-weight: 700; }
   .changes { margin: 32px 0 0; font-size: 16px; max-width: 860px; }
   .earlier { margin-top: 56px; }
   .earlier h3 { font-family: 'Schibsted Grotesk', sans-serif; font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
@@ -58,9 +64,63 @@
 <main>
   <div class="wrap">
     <p class="eyebrow">Website redesign</p>
-    <h1>Four hero options: option C chosen</h1>
-    <p class="lede">As discussed on 8 October, here is the simplified homepage with four choices for the top of the page: a looping video or a photo, each either below the menu or running up behind it. Each sits behind a dark overlay, and the rest of the page is the same in all four. On 12 October you chose option C; it now has a better photo crop on phones, and the motto line under the heading has been removed in all four. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
-    <a class="callout" href="fonts/"><div><strong>New: heading font options</strong><br><span>Five fonts for “Every mortgage has a purpose.”, on desktop and phone. Pick the one you like best.</span></div><span class="go">Compare fonts →</span></a>
+    <h1>Option C: choose a heading font</h1>
+    <p class="lede">You chose option C, the photo behind the menu. The last step is the font for the big headings: here is the full homepage in five fonts. Both work on desktop and mobile; only the homepage is included, and the enquiry form doesn't send anything.</p>
+    <section class="fonts-pick">
+      <h3 class="pick-h">Option C in five heading fonts</h3>
+      <p class="pick-lede">Your chosen design, as a full homepage in each font. Only the headings change; open each one on your phone too. Tell us the number you prefer.</p>
+      <div class="grid three">
+      <a class="card" href="option-c/schibsted/">
+        <div class="thumb"><img src="thumb-c-schibsted.jpg" alt="Option C homepage with Schibsted Grotesk headings" width="720" height="550" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Current</span>
+          <h2>1. Schibsted Grotesk</h2>
+          <p>What the site uses today: tight and condensed.</p>
+          <span class="go">View the full homepage →</span>
+        </div>
+      </a>
+      <a class="card" href="option-c/jakarta/">
+        <div class="thumb"><img src="thumb-c-jakarta.jpg" alt="Option C homepage with Plus Jakarta Sans headings" width="720" height="550" loading="lazy"></div>
+        <div class="body">
+          <span class="tag new">Our pick</span>
+          <h2>2. Plus Jakarta Sans</h2>
+          <p>Modern and confident, with open, rounded letters; popular with finance brands.</p>
+          <span class="go">View the full homepage →</span>
+        </div>
+      </a>
+      <a class="card" href="option-c/manrope/">
+        <div class="thumb"><img src="thumb-c-manrope.jpg" alt="Option C homepage with Manrope headings" width="720" height="550" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Font 3</span>
+          <h2>3. Manrope</h2>
+          <p>Clean and geometric, slightly more technical in feel.</p>
+          <span class="go">View the full homepage →</span>
+        </div>
+      </a>
+      <a class="card" href="option-c/dm-sans/">
+        <div class="thumb"><img src="thumb-c-dm-sans.jpg" alt="Option C homepage with DM Sans headings" width="720" height="550" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Font 4</span>
+          <h2>4. DM Sans</h2>
+          <p>Simple, friendly and very readable at every size.</p>
+          <span class="go">View the full homepage →</span>
+        </div>
+      </a>
+      <a class="card" href="option-c/figtree/">
+        <div class="thumb"><img src="thumb-c-figtree.jpg" alt="Option C homepage with Figtree headings" width="720" height="550" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Font 5</span>
+          <h2>5. Figtree</h2>
+          <p>The site's body font in bold, so headings and text match.</p>
+          <span class="go">View the full homepage →</span>
+        </div>
+      </a>
+      </div>
+      <p class="pick-more">Just the heading side by side? <a href="fonts/">Compare the five fonts on one page →</a></p>
+    </section>
+
+    <h3 class="pick-h">Hero options</h3>
+    <p class="pick-lede">As discussed on 8 October, here is the simplified homepage with four choices for the top of the page: a looping video or a photo, each either below the menu or running up behind it. Each sits behind a dark overlay, and the rest of the page is the same in all four. On 12 October you chose option C; it now has a better photo crop on phones, and the motto line under the heading has been removed in all four. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
     <div class="grid">
       <a class="card" href="hero-video/">
         <div class="thumb"><img src="thumb-hero-video.jpg" alt="Preview of the homepage with a video background" width="720" height="550"></div>
