@@ -975,7 +975,7 @@ body.drawer-open { overflow: hidden; }
 .hp-hero-solo .hp-lede { max-width: 640px; }
 /* Second sentence of the hero heading (client copy, 8 Oct): own line, smaller and softer */
 .hp-h1-soft { display: block; margin-top: .26em; font-size: max(.44em, 25px); font-weight: 600; line-height: 1.12; letter-spacing: -.025em; color: #3b5578; }
-.hp-hero-dark .hp-h1-soft { color: #dbe6f2; }
+.hp-hero-dark .hp-h1-soft { color: #00baff; } /* the blue of the bar under the Z in the logo (client, 13 Oct) */
 .hp-hero-solo .hp-cta-row, .hp-hero-solo .hp-ticks, .hp-hero-solo .hp-badges, .hp-hero-solo .hp-trust-row { justify-content: center; }
 .hp-hero-solo .hp-eyebrow::after { content: ""; width: 28px; height: 3px; background: var(--sky); flex-shrink: 0; }
 @media (max-width: 560px) { .hp-hero-solo .hp-eyebrow::before, .hp-hero-solo .hp-eyebrow::after { display: none; } }
