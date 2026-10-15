@@ -93,6 +93,28 @@
     if (isMenuOpen && drawer && isMenuOpen()) { setMenu(false); }
   });
 
+  // ---- Team "Email [name]" contact box (client, 13 Oct) -----------------------
+  // Links with data-team-email open the box for that person; without <dialog> support they go to the contact page.
+  var tc = document.querySelector('[data-team-dialog]');
+  if (tc && typeof tc.showModal === 'function') {
+    var openTeamContact = function (slug, name) {
+      if (slug) tc.querySelector('[data-tc-adviser]').value = slug;
+      if (name) tc.querySelectorAll('[data-tc-name]').forEach(function (n) { n.textContent = name; });
+      tc.showModal();
+      var first = tc.querySelector('.has-error input, .has-error textarea') || tc.querySelector('input[name="name"]');
+      if (first) first.focus();
+    };
+    document.querySelectorAll('[data-team-email]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        openTeamContact(a.getAttribute('data-team-email'), a.getAttribute('data-team-name'));
+      });
+    });
+    tc.querySelectorAll('[data-tc-close]').forEach(function (b) { b.addEventListener('click', function () { tc.close(); }); });
+    tc.addEventListener('click', function (e) { if (e.target === tc) tc.close(); }); // click on the backdrop
+    if (tc.hasAttribute('data-open')) openTeamContact();
+  }
+
   // ---- Header shadow once the page scrolls ---------------------------------
   if (header) {
     var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); document.body.classList.toggle('scrolled-page', window.scrollY > 500); };

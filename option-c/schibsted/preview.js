@@ -1,5 +1,6 @@
 // Client preview only: links to other pages are disabled and the enquiry form doesn't send.
 document.addEventListener('click', function (e) {
+  if (e.defaultPrevented) return; // handled by the page itself (e.g. the team "Email" box)
   var a = e.target.closest && e.target.closest('[data-preview-link]');
   if (!a) return;
   e.preventDefault();
@@ -10,7 +11,7 @@ document.addEventListener('click', function (e) {
     t.style.cssText = 'position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:9999;background:#13233f;color:#fff;padding:12px 18px;border-radius:10px;font:600 14px/1.4 Figtree,system-ui,sans-serif;box-shadow:0 12px 30px rgba(0,0,0,.25);max-width:90vw;text-align:center';
     document.body.appendChild(t);
   }
-  t.textContent = 'Preview of the homepage only — the "' + a.getAttribute('data-preview-link').replace(/^\//, '') + '" page is part of the full site.';
+  t.textContent = 'This preview includes the homepage and team page only — the "' + a.getAttribute('data-preview-link').replace(/^\//, '') + '" page is part of the full site.';
   clearTimeout(t._h); t._h = setTimeout(function () { t.remove(); }, 3200);
 });
 document.addEventListener('submit', function (e) {
