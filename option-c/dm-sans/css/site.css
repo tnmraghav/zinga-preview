@@ -998,6 +998,8 @@ body.drawer-open { overflow: hidden; }
    between the 24px gutters; desktop sizes are unchanged. */
 .hp-hero-solo .hp-h1 { font-size: min(clamp(46px, 7.4vw, 108px), calc((100vw - 48px) / 7.6)); }
 .hp-hero-solo .hp-lede { max-width: 640px; }
+/* Phones: the hero intro a little smaller so it doesn't dominate under the heading (client, 18 Oct) */
+@media (max-width: 700px) { .hp-hero-solo .hp-lede { font-size: 15.5px; line-height: 1.55; } }
 /* Hero heading lines ("Every mortgage" / "has a purpose."): each phrase stays together (client, 13 Oct). */
 .hp-h1-line { display: block; }
 /* Second sentence of the hero heading (client copy, 8 Oct): own line, smaller and softer */
