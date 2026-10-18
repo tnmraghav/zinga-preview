@@ -93,6 +93,23 @@
     if (isMenuOpen && drawer && isMenuOpen()) { setMenu(false); }
   });
 
+  // ---- Plus Jakarta Sans: tuck in a heading's closing full stop / ? / ! (see .hd-punct in site.css) ----
+  if (document.documentElement.classList.contains('hf-jakarta')) {
+    document.querySelectorAll('.hp-h1-line, .hp-h1-soft, .hp-h2, .ih-h1, main h1, main h2').forEach(function (h) {
+      var walker = document.createTreeWalker(h, NodeFilter.SHOW_TEXT), node, last = null;
+      while ((node = walker.nextNode())) { if (node.nodeValue.trim()) last = node; }
+      if (!last || last.parentNode.classList.contains('hd-punct')) return;
+      var m = last.nodeValue.match(/^([\s\S]*\S)([.!?])(\s*)$/);
+      if (!m) return;
+      var dot = document.createElement('span');
+      dot.className = 'hd-punct';
+      dot.textContent = m[2];
+      last.nodeValue = m[1];
+      last.parentNode.insertBefore(dot, last.nextSibling);
+      if (m[3]) last.parentNode.insertBefore(document.createTextNode(m[3]), dot.nextSibling);
+    });
+  }
+
   // ---- Team "Email [name]" contact box (client, 13 Oct) -----------------------
   // Links with data-team-email open the box for that person; without <dialog> support they go to the contact page.
   var tc = document.querySelector('[data-team-dialog]');

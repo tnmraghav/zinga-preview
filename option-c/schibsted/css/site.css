@@ -1010,6 +1010,9 @@ html.hf-figtree { --hp-display: 'Figtree', system-ui, sans-serif; }
 html:not(.hf-schibsted) .hp-hero-solo .hp-h1 { line-height: 1.04; letter-spacing: -.03em; }
 html.hf-jakarta .hp-hero-solo .hp-h1, html.hf-manrope .hp-hero-solo .hp-h1, html.hf-figtree .hp-hero-solo .hp-h1 { font-weight: 800; }
 html:not(.hf-schibsted) .hp-h1-soft { letter-spacing: -.02em; }
+/* Plus Jakarta Sans leaves a wide gap before a full stop at display sizes ("purpose ."): site.js wraps a heading's
+   closing punctuation in .hd-punct and this pulls it back to match the other fonts (0.16em gap → about 0.09em). */
+html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-h1-soft { display: block; margin-top: .26em; font-size: max(.44em, 25px); font-weight: 600; line-height: 1.12; letter-spacing: -.025em; color: #3b5578; }
 .hp-hero-dark .hp-h1-soft { color: #00baff; } /* the blue of the bar under the Z in the logo (client, 13 Oct) */
 .hp-hero-solo .hp-cta-row, .hp-hero-solo .hp-ticks, .hp-hero-solo .hp-badges, .hp-hero-solo .hp-trust-row { justify-content: center; }
