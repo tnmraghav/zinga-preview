@@ -1205,7 +1205,8 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-local-list { list-style: none; margin: 0; padding: 0; }
 .hp-local-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--hp-line); color: var(--hp-ink); text-decoration: none; }
 .hp-local-list a:hover { color: #0b6fa4; }
-.hp-local-name { font-family: var(--hp-display); font-size: clamp(38px, 5vw, 76px); font-weight: 700; letter-spacing: -.045em; line-height: 1; transition: transform .3s var(--ease-out); }
+.hp-local-list a .small { white-space: nowrap; }
+.hp-local-name { font-family: var(--hp-display); font-size: clamp(28px, 3.4vw, 48px); font-weight: 700; letter-spacing: -.035em; line-height: 1.05; /* smaller now there are six areas (client, 18 Oct) */ transition: transform .3s var(--ease-out); }
 .hp-local-list a:hover .hp-local-name { transform: translateX(6px); }
 .hp-local-media { aspect-ratio: 4 / 5; max-height: 620px; border-radius: 180px 6px 6px 6px; overflow: hidden; background: #e9eef2; }
 .hp-local-media { position: relative; }
