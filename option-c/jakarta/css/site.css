@@ -950,11 +950,11 @@ body.drawer-open { overflow: hidden; }
 .hp-eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #0b6fa4; }
 .hp-eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--sky); flex-shrink: 0; }
 .hp-eyebrow-light { color: var(--sky-on-dark); }
-.hp-h1 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(44px, 6vw, 84px); line-height: 1; letter-spacing: -.035em; color: var(--hp-ink); text-wrap: balance; }
-.hp-h2 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(32px, 4vw, 54px); line-height: 1.05; letter-spacing: -.03em; color: var(--hp-ink); text-wrap: balance; }
-.hp-h3 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -.02em; color: var(--hp-ink); line-height: 1.2; }
-.hp-h4 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(20px, 1.8vw, 24px); letter-spacing: -.015em; color: var(--hp-ink); line-height: 1.25; }
-.hp-lede { font-size: clamp(17px, 1.35vw, 19px); line-height: 1.6; color: var(--hp-muted); max-width: 540px; text-wrap: pretty; }
+.hp-h1 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(38px, 4.6vw, 64px); line-height: 1; letter-spacing: -.035em; color: var(--hp-ink); text-wrap: balance; }
+.hp-h2 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(27px, 2.9vw, 40px); line-height: 1.05; letter-spacing: -.03em; color: var(--hp-ink); text-wrap: balance; }
+.hp-h3 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(21px, 1.8vw, 25px); letter-spacing: -.02em; color: var(--hp-ink); line-height: 1.2; }
+.hp-h4 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(18px, 1.5vw, 21px); letter-spacing: -.015em; color: var(--hp-ink); line-height: 1.25; }
+.hp-lede { font-size: clamp(16px, 1.15vw, 17.5px); line-height: 1.6; color: var(--hp-muted); max-width: 540px; text-wrap: pretty; }
 .hp-narrow { max-width: 720px; margin: 14px 0 48px; }
 .hp-section { padding-top: clamp(72px, 9vw, 128px); }
 .hp-section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px 40px; margin-bottom: 48px; }
@@ -993,10 +993,11 @@ body.drawer-open { overflow: hidden; }
 .hp-trust-row li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--sky); }
 /* Message-led hero (2 Oct): centred copy, no photo, motto under the heading */
 .hp-hero-solo { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px; max-width: 980px; padding-top: clamp(16px, 3vw, 40px); padding-bottom: clamp(112px, 10vw, 168px); }
-.hp-hero-solo .hp-h1 { font-size: clamp(46px, 7.4vw, 108px); line-height: .98; }
-/* On phones, size the heading so its longer line ("Every mortgage", about 7.4em in the widest font option) fits
+.hp-hero-solo .hp-h1 { font-size: clamp(42px, 5.4vw, 78px); line-height: .98; }
+/* Type scale reduced by about a quarter (client, 18 Oct: "font sizes are still too large").
+   On phones, size the heading so its longer line ("Every mortgage", about 7.4em in the widest font option) fits
    between the 24px gutters; desktop sizes are unchanged. */
-.hp-hero-solo .hp-h1 { font-size: min(clamp(46px, 7.4vw, 108px), calc((100vw - 48px) / 7.6)); }
+.hp-hero-solo .hp-h1 { font-size: min(clamp(42px, 5.4vw, 78px), calc((100vw - 48px) / 7.6)); }
 .hp-hero-solo .hp-lede { max-width: 640px; }
 /* Phones: the hero intro a little smaller so it doesn't dominate under the heading (client, 18 Oct) */
 @media (max-width: 700px) { .hp-hero-solo .hp-lede { font-size: 15.5px; line-height: 1.55; } }
@@ -1015,7 +1016,7 @@ html:not(.hf-schibsted) .hp-h1-soft { letter-spacing: -.02em; }
 /* Plus Jakarta Sans leaves a wide gap before a full stop at display sizes ("purpose ."): site.js wraps a heading's
    closing punctuation in .hd-punct and this pulls it back to match the other fonts (0.16em gap → about 0.09em). */
 html.hf-jakarta .hd-punct { margin-left: -.07em; }
-.hp-h1-soft { display: block; margin-top: .26em; font-size: max(.44em, 25px); font-weight: 600; line-height: 1.12; letter-spacing: -.025em; color: #3b5578; }
+.hp-h1-soft { display: block; margin-top: .26em; font-size: max(.44em, 22px); font-weight: 600; line-height: 1.12; letter-spacing: -.025em; color: #3b5578; }
 .hp-hero-dark .hp-h1-soft { color: #00baff; } /* the blue of the bar under the Z in the logo (client, 13 Oct) */
 .hp-hero-solo .hp-cta-row, .hp-hero-solo .hp-ticks, .hp-hero-solo .hp-badges, .hp-hero-solo .hp-trust-row { justify-content: center; }
 .hp-hero-solo .hp-eyebrow::after { content: ""; width: 28px; height: 3px; background: var(--sky); flex-shrink: 0; }
@@ -1064,7 +1065,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-journey-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); grid-auto-rows: 1fr; gap: 12px; } /* equal rows so every card is the same size on phones */
 .hp-journey-btn { background: var(--hp-soft); border: 1px solid var(--hp-soft); border-radius: 12px; padding: 20px; min-height: 112px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; text-decoration: none; color: var(--hp-ink); transition: background-color .2s ease, border-color .2s ease, transform .25s var(--ease-out), box-shadow .25s ease; }
 .hp-journey-btn:hover { background: #fff; border-color: var(--hp-ink); color: var(--hp-ink); transform: translateY(-2px); box-shadow: 0 12px 24px rgba(14, 35, 64, .08); }
-.hp-journey-label { font-family: var(--hp-display); font-size: 20px; font-weight: 700; letter-spacing: -.01em; }
+.hp-journey-label { font-family: var(--hp-display); font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
 .hp-journey-sub { display: flex; justify-content: space-between; font-size: 14px; color: var(--hp-muted); }
 .hp-journey-sub span { color: var(--go); font-size: 18px; transition: transform .25s var(--ease-out); }
 .hp-journey-btn:hover .hp-journey-sub span { transform: translateX(4px); }
@@ -1086,7 +1087,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-about-media img { width: 100%; height: 100%; object-fit: cover; }
 .hp-about-copy { display: flex; flex-direction: column; gap: 24px; }
 .hp-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 24px; padding: 26px 0; margin: 0; border-top: 1px solid var(--hp-line); border-bottom: 1px solid var(--hp-line); }
-.hp-stats dt { font-family: var(--hp-display); font-size: clamp(36px, 3.8vw, 52px); font-weight: 700; letter-spacing: -.035em; line-height: 1; color: var(--hp-ink); }
+.hp-stats dt { font-family: var(--hp-display); font-size: clamp(30px, 2.8vw, 40px); font-weight: 700; letter-spacing: -.035em; line-height: 1; color: var(--hp-ink); }
 .hp-stats dd { margin: 6px 0 0; font-size: 14px; color: var(--hp-muted); line-height: 1.4; }
 /* About points (moved from the old "broker on your side" section, 8 Oct call) */
 .hp-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
@@ -1178,13 +1179,13 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-platforms a { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--hp-line); text-decoration: none; color: var(--hp-ink); }
 .hp-platforms a > span:first-child { display: flex; flex-direction: column; gap: 6px; }
 .hp-platform-score { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
-.hp-platform-score strong { font-family: var(--hp-display); font-size: 30px; line-height: 1; }
+.hp-platform-score strong { font-family: var(--hp-display); font-size: 26px; line-height: 1; }
 .hp-platform-score small { font-size: 13px; font-weight: 700; color: var(--link); }
 .hp-quotes { display: flex; flex-direction: column; gap: 28px; min-width: 0; }
 .hp-quote-stage { min-height: 240px; }
 .hp-quote { margin: 0; display: flex; flex-direction: column; gap: 22px; animation: fade-up .4s var(--ease-out) both; }
-.hp-quote-mark { font-family: var(--hp-display); font-size: 80px; line-height: .5; height: 34px; color: var(--sky); }
-.hp-quote blockquote { margin: 0; font-family: var(--hp-display); font-size: clamp(22px, 2.3vw, 31px); font-weight: 600; line-height: 1.35; letter-spacing: -.015em; color: var(--hp-ink); text-wrap: pretty; }
+.hp-quote-mark { font-family: var(--hp-display); font-size: 64px; line-height: .5; height: 28px; color: var(--sky); }
+.hp-quote blockquote { margin: 0; font-family: var(--hp-display); font-size: clamp(19px, 1.7vw, 24px); font-weight: 600; line-height: 1.35; letter-spacing: -.015em; color: var(--hp-ink); text-wrap: pretty; }
 .hp-quote figcaption { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 15px; }
 .hp-quote figcaption::before { content: ""; width: 28px; height: 1px; background: var(--hp-ink); }
 .hp-quote-nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 22px; border-top: 1px solid var(--hp-line); }
@@ -1206,7 +1207,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-local-list a { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--hp-line); color: var(--hp-ink); text-decoration: none; }
 .hp-local-list a:hover { color: #0b6fa4; }
 .hp-local-list a .small { white-space: nowrap; }
-.hp-local-name { font-family: var(--hp-display); font-size: clamp(28px, 3.4vw, 48px); font-weight: 700; letter-spacing: -.035em; line-height: 1.05; /* smaller now there are six areas (client, 18 Oct) */ transition: transform .3s var(--ease-out); }
+.hp-local-name { font-family: var(--hp-display); font-size: clamp(24px, 2.5vw, 36px); font-weight: 700; letter-spacing: -.035em; line-height: 1.05; /* smaller now there are six areas (client, 18 Oct) */ transition: transform .3s var(--ease-out); }
 .hp-local-list a:hover .hp-local-name { transform: translateX(6px); }
 .hp-local-media { aspect-ratio: 4 / 5; max-height: 620px; border-radius: 180px 6px 6px 6px; overflow: hidden; background: #e9eef2; }
 .hp-local-media { position: relative; }
@@ -1235,7 +1236,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-faq-side { display: flex; flex-direction: column; gap: 18px; }
 .hp-faq-list { border-top: 1px solid var(--hp-ink); }
 .hp-faq-item { border-bottom: 1px solid var(--hp-line); }
-.hp-faq-item summary { padding: 22px 0; font-family: var(--hp-display); font-size: clamp(18px, 1.6vw, 21px); font-weight: 600; gap: 14px; align-items: center; }
+.hp-faq-item summary { padding: 20px 0; font-family: var(--hp-display); font-size: clamp(17px, 1.3vw, 19px); font-weight: 600; gap: 14px; align-items: center; }
 .hp-faq-item summary > span:nth-child(2) { flex: 1; }
 .hp-faq-n { font-size: 14px; font-weight: 700; color: #0b6fa4; width: 32px; flex-shrink: 0; }
 .hp-faq-item p { padding: 0 44px 26px 46px; font-size: 16px; line-height: 1.7; }
@@ -1282,7 +1283,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-calc { display: flex; flex-direction: column; gap: 8px; padding: 22px; border: 1px solid var(--hp-line); border-radius: 14px; background: #fff; color: var(--hp-ink); text-decoration: none; transition: border-color .2s ease, transform .25s var(--ease-out), box-shadow .25s ease; }
 .hp-calc:hover { color: var(--hp-ink); border-color: var(--hp-ink); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(14, 35, 64, .08); }
 .hp-calc-icon { width: 44px; height: 44px; border-radius: 12px; background: #eaf6fc; color: #0b6fa4; display: grid; place-items: center; font-family: var(--hp-display); font-weight: 800; font-size: 20px; margin-bottom: 6px; }
-.hp-calc-title { font-family: var(--hp-display); font-size: 20px; font-weight: 700; letter-spacing: -.015em; }
+.hp-calc-title { font-family: var(--hp-display); font-size: 18px; font-weight: 700; letter-spacing: -.015em; }
 .hp-calc-desc { font-size: 14.5px; color: var(--hp-muted); line-height: 1.5; }
 .hp-calc-go { margin-top: auto; padding-top: 6px; font-size: 14px; font-weight: 700; color: var(--go); }
 .hp-calc-note { margin-top: 16px; }
@@ -1307,8 +1308,8 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .ih .breadcrumb a:hover { color: #fff; }
 .ih .breadcrumb [aria-current] { color: #fff; }
 .ih-badge { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: rgba(143, 208, 242, .16); color: var(--sky-on-dark); }
-.ih-h1 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(38px, 5vw, 68px); line-height: 1.03; letter-spacing: -.035em; text-wrap: balance; color: #fff; }
-.ih-lede { font-size: clamp(17px, 1.3vw, 19px); line-height: 1.6; color: #d3dce6; max-width: 540px; }
+.ih-h1 { font-family: var(--hp-display); font-weight: 700; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.03; letter-spacing: -.035em; text-wrap: balance; color: #fff; }
+.ih-lede { font-size: clamp(16px, 1.15vw, 17.5px); line-height: 1.6; color: #d3dce6; max-width: 540px; }
 .ih-btn-light { border: 1.5px solid #fff; color: #fff; background: transparent; }
 .ih-btn-light:hover { background: #fff; color: var(--hp-ink); box-shadow: none; }
 .ih-ticks { color: #d3dce6; }
@@ -1389,7 +1390,7 @@ html, body { background: #fff; }
 .page-hero h1, .article-main h1, .h1, .form-card h1, .legal-doc h1 {
   font-family: var(--hp-display, 'Figtree'); font-weight: 700; letter-spacing: -.035em; line-height: 1.04; color: var(--navy);
 }
-.page-hero h1, .h1 { font-size: clamp(36px, 4.8vw, 64px); }
+.page-hero h1, .h1 { font-size: clamp(30px, 3.6vw, 48px); }
 .article-main h1 { font-size: clamp(32px, 4vw, 52px); }
 .h2, .h3, .h4, .section-head h2, .guides-head h2, .prose h2, .featured-post-body h2 { font-family: var(--hp-display, 'Figtree'); letter-spacing: -.02em; }
 .page-hero .lead { font-size: clamp(17px, 1.35vw, 20px); }
