@@ -26,8 +26,8 @@
   function syncFloating() {
     var overlay = overlays.drawer || overlays.dialog;
     var covered = Object.keys(inView).some(function (k) { return inView[k]; });
-    /* The desktop pill waits until the hero and trust bar have scrolled away. */
-    if (waPill) setHidden(waPill, overlay || !pastBar);
+    /* The desktop pill waits until the hero and trust bar have scrolled away, and steps aside for the form. */
+    if (waPill) setHidden(waPill, overlay || !pastBar || !!inView.talk);
     /* The phone bar waits until the hero buttons have scrolled away, and steps aside for the form and legal text. */
     if (mbar) setHidden(mbar, overlay || covered);
   }
