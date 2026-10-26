@@ -1163,7 +1163,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-option input:checked + span { border-color: var(--hp-ink); background: #f0f5fa; box-shadow: inset 0 0 0 1px var(--hp-ink); }
 .hp-option input:focus-visible + span { outline: var(--focus); outline-offset: 2px; }
 /* Logo colours on the homepage journey cards and enquiry form (client call, 26 Oct): logo navy #001a40 + logo blue #00BAFF */
-:root { --logo-navy: #001a40; --logo-blue: #00baff; --logo-blue-tint: #e8f8ff; }
+:root { --logo-navy: #001a40; --logo-blue: #00baff; }
 .hp-journey-btn { background: var(--logo-navy); border-color: var(--logo-navy); color: #fff; }
 .hp-journey-label { color: #fff; }
 .hp-journey-sub { color: #b9d3ea; }
@@ -1171,14 +1171,28 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-journey-btn:hover, .hp-journey-btn:focus-visible { background: var(--logo-blue); border-color: var(--logo-blue); color: var(--logo-navy); box-shadow: 0 14px 28px -10px rgba(0, 186, 255, .55); }
 .hp-journey-btn:hover .hp-journey-label, .hp-journey-btn:focus-visible .hp-journey-label { color: var(--logo-navy); }
 .hp-journey-btn:hover .hp-journey-sub, .hp-journey-btn:hover .hp-journey-sub span, .hp-journey-btn:focus-visible .hp-journey-sub, .hp-journey-btn:focus-visible .hp-journey-sub span { color: var(--logo-navy); }
-.hp-enquiry { background: var(--logo-blue-tint); }
-.hp-form-card { border-color: #cdeefd; border-top: 4px solid var(--logo-blue); box-shadow: 0 24px 50px -32px rgba(0, 26, 64, .35); }
+/* Enquiry: logo-navy band, white form card outlined in logo blue (client, 26 Oct: no pale-blue background, highlight with the border) */
+.hp-enquiry { background: var(--logo-navy); color: #fff; }
+.hp-enquiry .hp-h2 { color: #fff; }
+.hp-enquiry .hp-eyebrow { color: var(--logo-blue); }
+.hp-enquiry .hp-eyebrow::before { background: var(--logo-blue); }
+.hp-enquiry .hp-lede { color: #c9d6e6; }
+.hp-enquiry .hp-progress-list li { border-top-color: rgba(255, 255, 255, .14); color: #9fb2c8; }
+.hp-enquiry .hp-progress-list li span { background: transparent; border-color: rgba(255, 255, 255, .35); color: #c9d6e6; }
+.hp-enquiry .hp-progress-list li.is-current { color: #fff; }
+.hp-enquiry .hp-progress-list li.is-current span { background: var(--logo-blue); border-color: var(--logo-blue); color: var(--logo-navy); }
+.hp-enquiry .hp-progress-list li.is-done span { background: #fff; border-color: #fff; color: var(--logo-navy); }
+.hp-enquiry .hp-form-trust { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .16); }
+.hp-enquiry .hp-mini-head { color: #fff; }
+.hp-enquiry .hp-form-trust ul { color: #d4dfeb; }
+.hp-enquiry .hp-form-trust li::before { color: var(--logo-blue); }
+.hp-enquiry .hp-secure { color: #c9d6e6 !important; }
+.hp-enquiry .hp-secure::before { background: var(--logo-blue); }
+.hp-form-card { color: var(--hp-ink); border: 2px solid var(--logo-blue); box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .55); }
 .hp-bar span { background: var(--logo-blue); }
-.hp-progress-list li.is-current span { background: var(--logo-navy); border-color: var(--logo-navy); }
-.hp-progress-list li.is-done span { background: var(--logo-blue); border-color: var(--logo-blue); color: var(--logo-navy); }
-.hp-option > span { border-color: #cfe3f2; background: #f5fcff; }
+.hp-option > span { background: #fff; border-color: #d6e2ec; }
 .hp-option:hover > span { border-color: var(--logo-blue); }
-.hp-option input:checked + span { background: var(--logo-navy); border-color: var(--logo-navy); box-shadow: inset 0 0 0 2px var(--logo-blue); }
+.hp-option input:checked + span { background: var(--logo-navy); border-color: var(--logo-blue); box-shadow: inset 0 0 0 1px var(--logo-blue); }
 .hp-option input:checked + span strong { color: #fff; }
 .hp-option input:checked + span small { color: #b9d3ea; }
 .hp-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; }
