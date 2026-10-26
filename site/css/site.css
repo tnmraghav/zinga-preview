@@ -208,6 +208,10 @@ main { flex: 1; }
 .adviser .ph { aspect-ratio: 4 / 5; border-radius: 12px; align-items: flex-end; justify-content: flex-start; padding: 14px; }
 .adviser .ph-label { font-size: 11px; text-align: left; }
 .adviser .name { font-size: 17px; font-weight: 600; color: var(--navy); }
+/* Adviser lists without photos (photos only on the team pages, client 26 Oct) */
+.adviser-grid--names .adviser { border: 1px solid var(--line); background: var(--white); padding: 18px 20px; gap: 4px; transition: border-color .2s ease; }
+.adviser-grid--names .adviser:hover { border-color: var(--navy); }
+.adviser-grid--names .adviser .name::after { content: " →"; color: var(--sky); }
 .adviser:hover .name { text-decoration: underline; text-underline-offset: 3px; }
 .adviser .role, .adviser .focus { font-size: 14px; color: var(--muted); }
 
@@ -1158,6 +1162,25 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-option:hover > span { border-color: #9fb0c3; }
 .hp-option input:checked + span { border-color: var(--hp-ink); background: #f0f5fa; box-shadow: inset 0 0 0 1px var(--hp-ink); }
 .hp-option input:focus-visible + span { outline: var(--focus); outline-offset: 2px; }
+/* Logo colours on the homepage journey cards and enquiry form (client call, 26 Oct): logo navy #001a40 + logo blue #00BAFF */
+:root { --logo-navy: #001a40; --logo-blue: #00baff; --logo-blue-tint: #e8f8ff; }
+.hp-journey-btn { background: var(--logo-navy); border-color: var(--logo-navy); color: #fff; }
+.hp-journey-label { color: #fff; }
+.hp-journey-sub { color: #b9d3ea; }
+.hp-journey-sub span { color: var(--logo-blue); }
+.hp-journey-btn:hover, .hp-journey-btn:focus-visible { background: var(--logo-blue); border-color: var(--logo-blue); color: var(--logo-navy); box-shadow: 0 14px 28px -10px rgba(0, 186, 255, .55); }
+.hp-journey-btn:hover .hp-journey-label, .hp-journey-btn:focus-visible .hp-journey-label { color: var(--logo-navy); }
+.hp-journey-btn:hover .hp-journey-sub, .hp-journey-btn:hover .hp-journey-sub span, .hp-journey-btn:focus-visible .hp-journey-sub, .hp-journey-btn:focus-visible .hp-journey-sub span { color: var(--logo-navy); }
+.hp-enquiry { background: var(--logo-blue-tint); }
+.hp-form-card { border-color: #cdeefd; border-top: 4px solid var(--logo-blue); box-shadow: 0 24px 50px -32px rgba(0, 26, 64, .35); }
+.hp-bar span { background: var(--logo-blue); }
+.hp-progress-list li.is-current span { background: var(--logo-navy); border-color: var(--logo-navy); }
+.hp-progress-list li.is-done span { background: var(--logo-blue); border-color: var(--logo-blue); color: var(--logo-navy); }
+.hp-option > span { border-color: #cfe3f2; background: #f5fcff; }
+.hp-option:hover > span { border-color: var(--logo-blue); }
+.hp-option input:checked + span { background: var(--logo-navy); border-color: var(--logo-navy); box-shadow: inset 0 0 0 2px var(--logo-blue); }
+.hp-option input:checked + span strong { color: #fff; }
+.hp-option input:checked + span small { color: #b9d3ea; }
 .hp-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; }
 .hp-money { display: flex; align-items: center; border: 1.5px solid var(--chip-line); border-radius: 8px; background: #fff; transition: border-color var(--t-fast) ease, box-shadow var(--t-fast) ease; }
 .hp-money:focus-within { border-color: var(--link); box-shadow: 0 0 0 4px rgba(63, 169, 224, .15); }
