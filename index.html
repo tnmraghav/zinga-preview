@@ -7,9 +7,9 @@
 <title>Zinga Financial Services — website preview</title>
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Schibsted+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 <style>
-  :root { --navy: #13233f; --sky: #3fa9e0; --muted: #4a5a6e; --line: #e2e7ec; }
+  :root { --navy: #13233f; --muted: #4a5a6e; --line: #e2e7ec; --blue: #0b6fa4; }
   * { box-sizing: border-box; }
   body { margin: 0; font-family: 'Figtree', system-ui, sans-serif; color: var(--navy); background: #f4f6f9; -webkit-font-smoothing: antialiased; }
   header { background: #fff; border-bottom: 1px solid var(--line); }
@@ -17,43 +17,22 @@
   header .wrap { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
   header img { height: 42px; width: auto; display: block; }
   header span { font-size: 14px; color: var(--muted); }
-  main .wrap { max-width: 1240px; padding-top: 56px; padding-bottom: 72px; }
-  .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #0b6fa4; margin: 0 0 14px; }
-  .eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--sky); }
-  h1 { font-family: 'Schibsted Grotesk', sans-serif; font-size: clamp(32px, 4.4vw, 52px); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 14px; }
-  .lede { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 40px; line-height: 1.6; }
+  main .wrap { padding-top: 48px; padding-bottom: 72px; }
+  h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -.02em; margin: 0 0 12px; }
+  .lede { font-size: 17px; color: var(--muted); max-width: 680px; margin: 0 0 36px; line-height: 1.6; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; }
-  .card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .25s ease, box-shadow .25s ease, border-color .2s ease; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(19, 35, 63, .12); border-color: var(--navy); }
-  .thumb { aspect-ratio: 720 / 550; overflow: hidden; border-bottom: 1px solid var(--line); background: #e9eef2; }
+  .card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .thumb { display: block; aspect-ratio: 720 / 550; overflow: hidden; border-bottom: 1px solid var(--line); background: #e9eef2; }
   .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .6s ease; }
   .card:hover .thumb img { transform: scale(1.03); }
-  .body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px; }
-  .tag { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: #eaf6fc; color: #0b6fa4; }
-  .tag.new { background: #e8f6ef; color: #0c7f50; }
-  .body h2 { font-family: 'Schibsted Grotesk', sans-serif; font-size: 26px; letter-spacing: -.02em; margin: 6px 0 0; }
+  .body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; }
+  .tag { align-self: flex-start; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: #e8f6ef; color: #0c7f50; }
+  .body h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 24px; letter-spacing: -.02em; margin: 4px 0 0; }
+  .body h2 a { color: inherit; text-decoration: none; }
   .body p { margin: 0; color: var(--muted); line-height: 1.55; }
-  .go { margin-top: 10px; font-weight: 700; color: #0b6fa4; }
-  .card:hover .go { color: var(--navy); }
-  .callout { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; background: #fff; border: 1px solid var(--line); border-left: 4px solid #0c7f50; border-radius: 12px; padding: 18px 22px; margin: 0 0 32px; text-decoration: none; color: inherit; }
-  .callout strong { font-size: 18px; }
-  .callout span { color: var(--muted); }
-  .callout:hover { border-color: var(--navy); }
-  .fonts-pick { margin: 0 0 56px; }
-  .pick-h { font-family: 'Schibsted Grotesk', sans-serif; font-size: 26px; letter-spacing: -.02em; margin: 0 0 6px; }
-  .pick-lede { margin: 0 0 20px; color: var(--muted); max-width: 760px; }
-  .grid.three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
-  .pick-more { margin: 18px 0 0; color: var(--muted); }
-  .pick-more a { color: #0b6fa4; font-weight: 700; }
-  .demo-links { font-size: 14px; line-height: 1.8; }
-  .demo-links a { color: #0b6fa4; font-weight: 600; }
-  .card h2 a { color: inherit; text-decoration: none; }
-  .changes { margin: 32px 0 0; font-size: 16px; max-width: 860px; }
-  .earlier { margin-top: 56px; }
-  .earlier h3 { font-family: 'Schibsted Grotesk', sans-serif; font-size: 22px; letter-spacing: -.02em; margin: 0 0 6px; }
-  .earlier > p { margin: 0 0 20px; color: var(--muted); }
-  .grid.small { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
-  .grid.small .body h2 { font-size: 20px; }
+  .links { font-size: 15px; line-height: 1.9; }
+  .links a, .go { color: var(--blue); font-weight: 700; text-decoration: none; }
+  .links a:hover, .go:hover { text-decoration: underline; }
   footer { text-align: center; font-size: 13px; color: var(--muted); padding: 0 24px 40px; }
 </style>
 </head>
@@ -61,190 +40,33 @@
 <header>
   <div class="wrap">
     <img src="logo.png" alt="Zinga Financial Services" width="99" height="42">
-    <span>Homepage design review</span>
+    <span>Website preview</span>
   </div>
 </header>
 <main>
   <div class="wrap">
-    <p class="eyebrow">Website redesign</p>
     <h1>Zinga website preview</h1>
-    <p class="lede">The whole website as it stands: option C with Plus Jakarta Sans, every service, area, team, guide and calculator page. Click around as you would on the live site. Forms don't send anything in this preview. Content marked for compliance review is still draft.</p>
-    <section class="fonts-pick">
-      <h3 class="pick-h">Service and location pages: Design B chosen</h3>
-      <p class="pick-lede">Two different directions for the inner pages, using your real content, photos and reviews: four main service pages and the Uxbridge page in each. You chose Design B (Meet Your Adviser); we'll build the rest of the site in that style. Design A is kept for reference. Forms don't send anything in this demo.</p>
-      <div class="grid">
-      <div class="card">
-        <a class="thumb" href="demos/b/first-time-buyers/"><img src="thumb-demo-b.jpg" alt="Design B: Meet Your Adviser" width="720" height="550"></a>
-        <div class="body">
-          <span class="tag new">Design B · chosen 26 Oct</span>
-          <h2><a href="demos/b/first-time-buyers/">Meet Your Adviser</a></h2>
-          <p>Warm and people-first: a real adviser in the hero, the 2-hour reply up front, question-style sections and your team with "Email [name]" at the centre of the page.</p>
-          <p class="demo-links"><a href="demos/b/first-time-buyers/">First-time buyers</a> · <a href="demos/b/remortgage/">Remortgage</a> · <a href="demos/b/buy-to-let-mortgage/">Buy-to-let</a> · <a href="demos/b/company-director-mortgages/">Company directors</a> · <a href="demos/b/uxbridge/">Uxbridge (location)</a></p>
-        </div>
-      </div>
-      <div class="card">
-        <a class="thumb" href="demos/a/first-time-buyers/"><img src="thumb-demo-a.jpg" alt="Design A: Chapters" width="720" height="550"></a>
-        <div class="body">
-          <span class="tag">Design A · not chosen</span>
-          <h2><a href="demos/a/first-time-buyers/">Chapters</a></h2>
-          <p>A calm, guidebook-style page: a short photo hero, then numbered chapters with a contents bar that shows where you are, so all the detail is there without feeling like too much at once.</p>
-          <p class="demo-links"><a href="demos/a/first-time-buyers/">First-time buyers</a> · <a href="demos/a/remortgage/">Remortgage</a> · <a href="demos/a/buy-to-let-mortgage/">Buy-to-let</a> · <a href="demos/a/company-director-mortgages/">Company directors</a> · <a href="demos/a/uxbridge/">Uxbridge (location)</a></p>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section class="fonts-pick">
-      <div class="grid three">
-      <a class="card" href="site/">
-        <div class="thumb"><img src="thumb-c-jakarta.jpg" alt="The Zinga homepage" width="720" height="550"></div>
-        <div class="body">
-          <span class="tag new">Full website · 20 Oct</span>
-          <h2>Open the full website</h2>
-          <p>65 pages: home, mortgages and protection, local areas, about, team, reviews, guides, calculators, contact and legal. Works on desktop and mobile.</p>
-          <span class="go">Open the website →</span>
-        </div>
-      </a>
-      </div>
-    </section>
-
-    <h3 class="pick-h">Earlier design choices</h3>
-    <p class="pick-lede">Kept for reference: you chose option C with Plus Jakarta Sans.</p>
-    <section class="fonts-pick">
-      <h3 class="pick-h">Option C in five heading fonts (2 chosen)</h3>
-      <p class="pick-lede">Your chosen design, as a full homepage in each font. Only the headings change; open each one on your phone too. Tell us the number you prefer.</p>
-      <div class="grid three">
-      <a class="card" href="option-c/schibsted/">
-        <div class="thumb"><img src="thumb-c-schibsted.jpg" alt="Option C homepage with Schibsted Grotesk headings" width="720" height="550" loading="lazy"></div>
-        <div class="body">
-          <span class="tag">Current</span>
-          <h2>1. Schibsted Grotesk</h2>
-          <p>What the site uses today: tight and condensed.</p>
-          <span class="go">View the full homepage →</span>
-        </div>
-      </a>
-      <a class="card" href="option-c/jakarta/">
-        <div class="thumb"><img src="thumb-c-jakarta.jpg" alt="Option C homepage with Plus Jakarta Sans headings" width="720" height="550" loading="lazy"></div>
-        <div class="body">
-          <span class="tag new">Chosen · 18 Oct</span>
-          <h2>2. Plus Jakarta Sans</h2>
-          <p>Modern and confident, with open, rounded letters; popular with finance brands.</p>
-          <span class="go">View the full homepage →</span>
-        </div>
-      </a>
-      <a class="card" href="option-c/manrope/">
-        <div class="thumb"><img src="thumb-c-manrope.jpg" alt="Option C homepage with Manrope headings" width="720" height="550" loading="lazy"></div>
-        <div class="body">
-          <span class="tag">Font 3</span>
-          <h2>3. Manrope</h2>
-          <p>Clean and geometric, slightly more technical in feel.</p>
-          <span class="go">View the full homepage →</span>
-        </div>
-      </a>
-      <a class="card" href="option-c/dm-sans/">
-        <div class="thumb"><img src="thumb-c-dm-sans.jpg" alt="Option C homepage with DM Sans headings" width="720" height="550" loading="lazy"></div>
-        <div class="body">
-          <span class="tag">Font 4</span>
-          <h2>4. DM Sans</h2>
-          <p>Simple, friendly and very readable at every size.</p>
-          <span class="go">View the full homepage →</span>
-        </div>
-      </a>
-      <a class="card" href="option-c/figtree/">
-        <div class="thumb"><img src="thumb-c-figtree.jpg" alt="Option C homepage with Figtree headings" width="720" height="550" loading="lazy"></div>
-        <div class="body">
-          <span class="tag">Font 5</span>
-          <h2>5. Figtree</h2>
-          <p>The site's body font in bold, so headings and text match.</p>
-          <span class="go">View the full homepage →</span>
-        </div>
-      </a>
-      </div>
-      <p class="pick-more">Just the heading side by side? <a href="fonts/">Compare the five fonts on one page →</a></p>
-    </section>
-
-    <section class="fonts-pick">
-      <h3 class="pick-h">Team page</h3>
-      <p class="pick-lede">Your team photos with name and job title only. No personal emails or phone numbers are shown: each person has an "Email" button that opens a short form, and the message comes to your admin inbox with that person's name on it. (In this preview the form doesn't send anything.)</p>
-      <div class="grid three">
-      <a class="card" href="team/">
-        <div class="thumb"><img src="thumb-team.jpg" alt="The team page with photos of Kunjan, Seema, Dylan, Aditi and Arifa" width="720" height="550" loading="lazy"></div>
-        <div class="body">
-          <span class="tag new">New · 15 Oct</span>
-          <h2>Our team</h2>
-          <p>Kunjan Kunwar, Seema Babber, Dylan Sidhu, Aditi Sinha and Arifa Shakoor, in the order you sent them. Try an "Email" button.</p>
-          <span class="go">View the team page →</span>
-        </div>
-      </a>
-      </div>
-    </section>
-
-    <h3 class="pick-h">Hero options</h3>
-    <p class="pick-lede">As discussed on 8 October, here is the simplified homepage with four choices for the top of the page: a looping video or a photo, each either below the menu or running up behind it. Each sits behind a dark overlay, and the rest of the page is the same in all four. On 12 October you chose option C; it now has a better photo crop on phones, and the motto line under the heading has been removed in all four. Both work on desktop and mobile. Only the homepage is included in this preview, and the enquiry form doesn't send anything.</p>
+    <p class="lede">The current website and the final design for the service and location pages. Click around as you would on the live site; forms don't send anything in this preview, and content marked for compliance review is still draft.</p>
     <div class="grid">
-      <a class="card" href="hero-video/">
-        <div class="thumb"><img src="thumb-hero-video.jpg" alt="Preview of the homepage with a video background" width="720" height="550"></div>
+      <div class="card">
+        <a class="thumb" href="site/"><img src="thumb-site.jpg" alt="The Zinga homepage" width="720" height="550"></a>
         <div class="body">
-          <span class="tag new">Option A · 9 Oct</span>
-          <h2>Video background</h2>
-          <p>A slow, silent loop of home and advice scenes plays behind the heading and motto. It pauses for visitors who prefer reduced motion and has a pause button. Our sample is made from the site's illustrative images; a filmed or licensed clip can replace it.</p>
-          <span class="go">View option A →</span>
+          <span class="tag">Full website</span>
+          <h2><a href="site/">Open the website</a></h2>
+          <p>Every page: home, mortgages, protection, investments &amp; pensions, local areas, about, team, reviews, guides, calculators, contact and legal.</p>
+          <a class="go" href="site/">Open the website →</a>
         </div>
-      </a>
-      <a class="card" href="hero-photo/">
-        <div class="thumb"><img src="thumb-hero-photo.jpg" alt="Preview of the homepage with a photo background" width="720" height="550"></div>
-        <div class="body">
-          <span class="tag new">Option B · 9 Oct</span>
-          <h2>Photo background</h2>
-          <p>One full-width photo behind the message: lighter to load and calmer than a video. The photo can be changed at any time, ideally to a real photo of the Zinga team or office.</p>
-          <span class="go">View option B →</span>
-        </div>
-      </a>
-      <a class="card" href="hero-photo-full/">
-        <div class="thumb"><img src="thumb-hero-photo-full.jpg" alt="Preview of the homepage with the photo running behind the menu" width="720" height="550"></div>
-        <div class="body">
-          <span class="tag new">Option C · chosen 12 Oct</span>
-          <h2>Photo behind the menu</h2>
-          <p>The same photo, but it runs right up behind the menu bar, which turns transparent with a white logo. There's no top bar, so the photo starts at the very top of the page. It switches back to the normal white menu as soon as you scroll or open a menu. Option D shows the same with the video.</p>
-          <span class="go">View option C →</span>
-        </div>
-      </a>
-      <a class="card" href="hero-video-full/">
-        <div class="thumb"><img src="thumb-hero-video-full.jpg" alt="Preview of the homepage with the video running behind the menu" width="720" height="550"></div>
-        <div class="body">
-          <span class="tag new">Option D · 9 Oct</span>
-          <h2>Video behind the menu</h2>
-          <p>Option A's video, running right up behind the transparent menu bar with a white logo. Like option C, the menu turns white again as soon as you scroll or open a menu.</p>
-          <span class="go">View option D →</span>
-        </div>
-      </a>
-    </div>
-    <p class="lede changes">What changed since the call: the line above the heading and the FCA number in the top bar are removed; the repeated sections are gone (“Not just a comparison site”, “What can we help with?”, the three steps, advisers and protection — they now live on their own pages); About Zinga shows lenders, Google and Trustpilot, with the whole-of-market, dedicated adviser and end-to-end points underneath; and the calculators sit higher up. The hero now uses your wording: “Every mortgage has a purpose. We take the time to understand yours.” with the “Talk to an adviser” button.</p>
-
-    <section class="earlier">
-      <h3>Earlier versions</h3>
-      <p>Kept for comparison.</p>
-      <div class="grid small">
-      <a class="card" href="new/">
-        <div class="thumb"><img src="thumb-new.jpg" alt="Preview of the new homepage" width="720" height="550"></div>
-        <div class="body">
-          <span class="tag">2 Oct</span>
-          <h2>New homepage (2 Oct)</h2>
-          <p>Design option 1's layout and bold headings. Updated after your feedback: the hero now leads with the message and your motto, “Making your journey part of ours too.” It also has the step-by-step mortgage enquiry, lender logos, calculators, protection and local expertise.</p>
-          <span class="go">View the new homepage →</span>
-        </div>
-      </a>
-      <a class="card" href="previous/">
-        <div class="thumb"><img src="thumb-previous.jpg" alt="Preview of the previous homepage" width="720" height="550"></div>
-        <div class="body">
-          <span class="tag">Previous</span>
-          <h2>Previous homepage</h2>
-          <p>The earlier version shown as design 2 in our call, kept here for comparison.</p>
-          <span class="go">View the previous homepage →</span>
-        </div>
-      </a>
       </div>
-    </section>
+      <div class="card">
+        <a class="thumb" href="demos/b/first-time-buyers/"><img src="thumb-demo-b.jpg" alt="Final design for the service pages" width="720" height="550"></a>
+        <div class="body">
+          <span class="tag">Final design · service &amp; location pages</span>
+          <h2><a href="demos/b/first-time-buyers/">Service and location page design</a></h2>
+          <p>The chosen design. We'll build every service and area page in this style.</p>
+          <p class="links"><a href="demos/b/first-time-buyers/">First-time buyers</a> · <a href="demos/b/remortgage/">Remortgage</a> · <a href="demos/b/buy-to-let-mortgage/">Buy-to-let</a> · <a href="demos/b/company-director-mortgages/">Company directors</a> · <a href="demos/b/uxbridge/">Uxbridge</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 <footer>Preview for Zinga Financial Services. Content, claims and images are still to be confirmed before launch.</footer>
