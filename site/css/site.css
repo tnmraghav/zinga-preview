@@ -1248,15 +1248,22 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-local-list a:hover .hp-local-name { transform: translateX(6px); }
 .hp-local-media { aspect-ratio: 4 / 5; max-height: 620px; border-radius: 180px 6px 6px 6px; overflow: hidden; background: #e9eef2; }
 .hp-local-media { position: relative; }
-.hp-local-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .45s ease, transform 1.2s var(--ease-out); transform: scale(1.03); }
-.hp-local-media img.is-default { opacity: 1; transform: none; }
-.hp-local:has(.hp-local-list li:hover) .hp-local-media img.is-default { opacity: 0; }
-.hp-local:has(.hp-local-list li:nth-child(1):hover) .hp-local-media img:nth-child(1),
-.hp-local:has(.hp-local-list li:nth-child(2):hover) .hp-local-media img:nth-child(2),
-.hp-local:has(.hp-local-list li:nth-child(3):hover) .hp-local-media img:nth-child(3),
-.hp-local:has(.hp-local-list li:nth-child(4):hover) .hp-local-media img:nth-child(4),
-.hp-local:has(.hp-local-list li:nth-child(5):hover) .hp-local-media img:nth-child(5),
-.hp-local:has(.hp-local-list li:nth-child(6):hover) .hp-local-media img:nth-child(6) { opacity: 1; transform: none; }
+/* Each area photo sits in a figure with its credit; hidden figures are also visibility:hidden so their links can't be clicked. */
+.hp-local-media figure { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; transform: scale(1.03); transition: opacity .45s ease, visibility .45s, transform 1.2s var(--ease-out); }
+.hp-local-media img { width: 100%; height: 100%; object-fit: cover; }
+.hp-local-media figure.is-default { opacity: 1; visibility: visible; transform: none; }
+.hp-local:has(.hp-local-list li:hover) .hp-local-media figure.is-default { opacity: 0; visibility: hidden; }
+.hp-local:has(.hp-local-list li:nth-child(1):hover) .hp-local-media figure:nth-child(1),
+.hp-local:has(.hp-local-list li:nth-child(2):hover) .hp-local-media figure:nth-child(2),
+.hp-local:has(.hp-local-list li:nth-child(3):hover) .hp-local-media figure:nth-child(3),
+.hp-local:has(.hp-local-list li:nth-child(4):hover) .hp-local-media figure:nth-child(4),
+.hp-local:has(.hp-local-list li:nth-child(5):hover) .hp-local-media figure:nth-child(5),
+.hp-local:has(.hp-local-list li:nth-child(6):hover) .hp-local-media figure:nth-child(6) { opacity: 1; visibility: visible; transform: none; }
+
+/* Photo credits for Creative Commons area photos (App\Support\PhotoCredits). */
+.photo-credit { position: absolute; right: 0; bottom: 0; margin: 0; padding: 4px 10px; font-size: 11px; line-height: 1.4; color: #fff; background: rgba(0, 26, 64, .6); border-radius: 6px 0 0 0; }
+.photo-credit a, .photo-credits a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.photo-credits { margin-top: -16px; font-size: 12px; color: var(--hp-muted); }
 
 /* Insights */
 .hp-insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; }
@@ -1352,7 +1359,7 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .ih-ticks { color: #d3dce6; }
 .ih-ticks li::before { color: #5fd49c; }
 .ih .hp-badge { border-color: transparent; }
-.ih-media { aspect-ratio: 6 / 5; border-radius: 6px 160px 6px 6px; overflow: hidden; background: #1a3354; }
+.ih-media { position: relative; aspect-ratio: 6 / 5; border-radius: 6px 160px 6px 6px; overflow: hidden; background: #1a3354; }
 .ih-media img { width: 100%; height: 100%; object-fit: cover; animation: hero-zoom 1.6s var(--ease-out) both; }
 .ih-trust { border-bottom: 1px solid var(--hp-line); background: #fff; }
 .ih-trust .hp-trust-row { padding: 20px 24px; gap: 10px 32px; }
