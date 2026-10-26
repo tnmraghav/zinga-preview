@@ -425,7 +425,7 @@ main { flex: 1; }
 .team-card img { aspect-ratio: 4 / 5; width: 100%; object-fit: cover; display: block; }
 .team-card .body { padding: 18px; display: flex; flex-direction: column; gap: 4px; }
 /* Team page (client, 13 Oct): photo, name, job title and an "Email" button that opens the contact box */
-.team-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); align-items: stretch; } /* all five in one row on desktop */
+.team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; } /* six people: 3 × 2 on desktop and tablet */
 @media (max-width: 600px) { .team-grid { grid-template-columns: 1fr 1fr; gap: 12px; } .team-card .body { padding: 12px; } .team-name { font-size: 16px; } .team-email { padding: 8px 12px; font-size: 14px; } }
 .team-card .body { flex: 1; }
 .team-card-photo { display: block; overflow: hidden; }
