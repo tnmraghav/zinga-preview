@@ -145,6 +145,7 @@
     '.guide-card', '.guide-tile', '.team-card', '.link-card', '.hub-row', '.box', '.box-outline', '.area-card',
     '.area-row', '.person-card', '.cta-box', '.office-card', '.area-grid .media-frame', '.faq-list', '.lined', '.prose > *',
     '.hp-pillar', '.hp-steps li', '.hp-insight', '.hp-cro', '.hp-local-list li', '.hp-about-media', '.hp-local-media', '.hp-stats', '.hp-form-card', '.hp-platforms', '.hp-faq-item',
+    '.ib-r',
   ].join(',');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {

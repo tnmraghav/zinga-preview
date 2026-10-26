@@ -21,6 +21,7 @@
   h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.08; letter-spacing: -.02em; margin: 0 0 12px; }
   .lede { font-size: 17px; color: var(--muted); max-width: 680px; margin: 0 0 36px; line-height: 1.6; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 24px; }
+ .grid.single { grid-template-columns: minmax(0, 560px); }
   .card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
   .thumb { display: block; aspect-ratio: 720 / 550; overflow: hidden; border-bottom: 1px solid var(--line); background: #e9eef2; }
   .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .6s ease; }
@@ -46,24 +47,16 @@
 <main>
   <div class="wrap">
     <h1>Zinga website preview</h1>
-    <p class="lede">The current website and the final design for the service and location pages. Click around as you would on the live site; forms don't send anything in this preview, and content marked for compliance review is still draft.</p>
-    <div class="grid">
+    <p class="lede">The full website, with every service and area page now in the final design you chose. Click around as you would on the live site; forms don't send anything in this preview, and content marked for compliance review is still draft.</p>
+    <div class="grid single">
       <div class="card">
         <a class="thumb" href="site/"><img src="thumb-site.jpg" alt="The Zinga homepage" width="720" height="550"></a>
         <div class="body">
           <span class="tag">Full website</span>
           <h2><a href="site/">Open the website</a></h2>
           <p>Every page: home, mortgages, protection, investments &amp; pensions, local areas, about, team, reviews, guides, calculators, contact and legal.</p>
+          <p class="links">Service pages: <a href="site/first-time-buyers/">First-time buyers</a> · <a href="site/remortgage/">Remortgage</a> · <a href="site/buy-to-let-mortgage/">Buy-to-let</a> · <a href="site/investment-pensions/">Investments &amp; pensions</a><br>Area pages: <a href="site/areas-we-serve/uxbridge/">Uxbridge</a> · <a href="site/areas-we-serve/high-wycombe/">High Wycombe</a> · <a href="site/areas-we-serve/beaconsfield/">Beaconsfield</a></p>
           <a class="go" href="site/">Open the website →</a>
-        </div>
-      </div>
-      <div class="card">
-        <a class="thumb" href="demos/b/first-time-buyers/"><img src="thumb-demo-b.jpg" alt="Final design for the service pages" width="720" height="550"></a>
-        <div class="body">
-          <span class="tag">Final design · service &amp; location pages</span>
-          <h2><a href="demos/b/first-time-buyers/">Service and location page design</a></h2>
-          <p>The chosen design. We'll build every service and area page in this style.</p>
-          <p class="links"><a href="demos/b/first-time-buyers/">First-time buyers</a> · <a href="demos/b/remortgage/">Remortgage</a> · <a href="demos/b/buy-to-let-mortgage/">Buy-to-let</a> · <a href="demos/b/company-director-mortgages/">Company directors</a> · <a href="demos/b/uxbridge/">Uxbridge</a></p>
         </div>
       </div>
     </div>

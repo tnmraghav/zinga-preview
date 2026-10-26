@@ -25,29 +25,16 @@
 <script src="../js/site.js" defer></script>
         <script src="../js/home.js" defer></script>
     </head>
-<body >
+<body  class="header-overlay" >
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="page">
     
-            <div class="topbar" role="region" aria-label="Contact and regulatory information">
-        <div class="container topbar-inner">
-            <p class="topbar-msg">
-                <span class="topbar-dot" aria-hidden="true"></span>
-                A dedicated adviser and case handler — reply within two working hours
-            </p>
-            <ul class="topbar-links">
-                
-                <li class="topbar-hide-sm"><span>Mon–Fri 9am–6pm</span></li>
-                <li class="topbar-hide-sm"><a href="mailto:hello@zingafs.com">hello@zingafs.com</a></li>
-                                    <li class="topbar-hide-sm"><a href="https://wa.me/442084978737" rel="noopener" target="_blank" data-event="whatsapp_click" data-location="topbar">WhatsApp</a></li>
-                                <li><a class="topbar-phone" href="tel:02084978737" data-event="call_click" data-location="topbar">0208 497 8737</a></li>
-            </ul>
-        </div>
-    </div>
         <header class="site-header" id="site-header">
     <div class="container header-bar">
         <a class="logo" href="../" aria-label="Zinga Financial Services home">
-            <img class="" src="../images/zinga-logo.png" alt="Zinga Financial Services" width="94" height="40">
+            <img class="logo-dark" src="../images/zinga-logo.png" alt="Zinga Financial Services" width="94" height="40">
+                            
+                <img class="logo-light" src="../images/zinga-logo-white.png" alt="" aria-hidden="true" width="94" height="40">
                     </a>
         <nav class="main-nav" aria-label="Main">
             
@@ -301,332 +288,476 @@
 </aside>
 
     <main id="main">
-        <div class="hp-page">
-    <section class="ih">
-    <div class="container ih-grid">
-        <div class="ih-copy">
-            <nav aria-label="Breadcrumb">
+        <div class="ib-page">
+    <svg class="ib-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M8 14h2M14 14h2M8 17h2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l2.85 5.95 6.55.8-4.85 4.5 1.25 6.5L12 17.15 6.2 20.35l1.25-6.5L2.6 9.35l6.55-.8z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.6v3a2 2 0 0 1-2.2 2 19.6 19.6 0 0 1-8.5-3 19.3 19.3 0 0 1-6-6A19.6 19.6 0 0 1 1.4 4.1 2 2 0 0 1 3.4 2h3a2 2 0 0 1 2 1.7c.13.95.36 1.88.7 2.77a2 2 0 0 1-.45 2.1L7.4 9.83a16 16 0 0 0 6 6l1.26-1.27a2 2 0 0 1 2.1-.45c.89.34 1.82.57 2.77.7A2 2 0 0 1 21 16.6z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 20.4l1.25-4.1A8.6 8.6 0 1 1 8 19.3z"/><path d="M9.2 8.6c-.3 2.8 3.2 6.4 6.2 6.2l.8-1.3-1.9-1-1 .7c-.9-.4-1.7-1.2-2.1-2.1l.7-1-1-1.9z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 16.5l9 5 9-5"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.3c2.1.7 3.5 2.6 3.5 5.7"/></symbol>
+    <symbol id="i-speech" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6.5A1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5v7a1.5 1.5 0 0 1-1.5 1.5H11l-4.5 3.5V15A1.5 1.5 0 0 1 5 13.5z"/></symbol>
+    <symbol id="i-train" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="13.5" rx="3"/><path d="M5 10h14M8.5 13.3h.01M15.5 13.3h.01M8 16.5L6 21M16 16.5l2 4.5M7 19h10"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 16.5v-4.3L5.6 7h12.8l2.1 5.2v4.3z"/><path d="M3.5 12.2h17"/><circle cx="7.5" cy="16.8" r="1.8"/><circle cx="16.5" cy="16.8" r="1.8"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.8" width="14" height="18.4" rx="2.5"/><path d="M8.5 7h7M8.5 11.2h.01M12 11.2h.01M15.5 11.2h.01M8.5 14.6h.01M12 14.6h.01M15.5 14.6h.01M8.5 18h.01M12 18h3.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.2s-7-6.1-7-11.6a7 7 0 0 1 14 0c0 5.5-7 11.6-7 11.6z"/><circle cx="12" cy="9.6" r="2.6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></symbol>
+</svg>
+<section class="ib-hero">
+            <img class="ib-hero-img " src="../storage/stock/service-remortgage.jpg" alt="" width="1600" height="1067" fetchpriority="high" decoding="async">
+        <div class="ib-hero-shade" aria-hidden="true"></div>
+    <div class="container ib-hero-copy">
+        <div class="ib-crumbs"><nav aria-label="Breadcrumb">
     <ol class="breadcrumb">
         <li><a href="../">Home</a></li>
                                     <li><a href="../mortgages/">Mortgages</a></li>
                                                 <li aria-current="page">Remortgage</li>
                         </ol>
 </nav>
-                        <p class="hp-eyebrow hp-eyebrow-light">Mortgages</p>
-            <h1 class="ih-h1">Remortgage advice when your deal is ending</h1>
-            <p class="ih-lede" >Review your options three to six months before your rate ends.</p>            <div class="hp-cta-row">
-                <a class="btn btn-go btn-lg" href="#enquiry"  data-scroll-enquiry  data-event="callback_click" data-location="inner_hero">Get started <span aria-hidden="true">→</span></a>
-                <a class="btn btn-lg ih-btn-light hp-call-btn" href="tel:02084978737" data-event="call_click" data-location="inner_hero"><span>Talk to an adviser</span><small>0208 497 8737</small></a>
-            </div>
-            <ul class="hp-ticks ih-ticks" aria-label="What to expect">
-                <li>No obligation</li><li>Speak to a real adviser</li>
-            </ul>
-            <div class="hp-badges">
-                <a class="hp-badge" href="https://search.google.com/local/reviews?placeid=ChIJiZ4K7e9zdkgRkACHUuBenNY">
-                    <span class="hp-badge-name">Google<span class="hp-stars hp-stars-g" aria-hidden="true">★★★★★</span></span>
-                    <span class="hp-badge-score"><strong>273</strong><small>reviews</small></span>
-                </a>
-                <a class="hp-badge" href="https://uk.trustpilot.com/review/zingafs.com">
-                    <span class="hp-badge-name">Trustpilot<span class="hp-stars hp-stars-tp" aria-hidden="true"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span></span>
-                    <span class="hp-badge-score"><strong>5.0</strong><small>224 reviews</small></span>
-                </a>
-            </div>
+</div>
+        <p class="ib-eyebrow">Mortgage advice</p>
+        <h1 class="ib-h1">Remortgage advice when your deal is ending</h1>
+        <p class="ib-lede">Review your options three to six months before your rate ends.</p>        <div class="ib-hero-ctas">
+            <a class="btn btn-go btn-lg" href="#enquiry" data-scroll-enquiry data-event="callback_click" data-location="inner_hero">Request a callback</a>
+            <a class="btn btn-lg ib-btn-ghost" href="tel:02084978737" data-event="call_click" data-location="inner_hero"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg>
+<span class="ib-wide">Call 0208 497 8737</span><span class="ib-narrow">Call</span></a>
         </div>
-                    <div class="ih-media">
-                <img src="../storage/stock/service-remortgage.jpg" alt=""  width="1200"   height="1000"         loading="eager" decoding="async"  fetchpriority="high"  >
-                            </div>
+    </div>
+    </section>
+    <div class="ib-tbar-wrap">
+    <div class="container">
+        <div class="ib-tbar ib-tbar--service">
+            <div class="ib-tcell ib-tcell-icon">
+                <span class="ib-ticon ib-ticon-green"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg>
+</span>
+                <span class="ib-tstack"><span class="ib-tlabel">We reply</span><span class="ib-tval">Within 2 working hours</span></span>
             </div>
-</section>
-<div class="ih-trust">
-    <ul class="container hp-trust-row">
-                    <li>FCA regulated</li>
-                    <li>Whole-of-market</li>
-                    <li>90+ lenders</li>
-                    <li>Personal adviser support</li>
-            </ul>
+                        <a class="ib-tcell ib-tcell-score" href="https://search.google.com/local/reviews?placeid=ChIJiZ4K7e9zdkgRkACHUuBenNY">
+                <span class="ib-stars ib-stars-g" aria-hidden="true"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+<svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+<svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+<svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+<svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+</span>
+                <span class="ib-tval">273</span>
+                <span class="ib-tlabel">Google reviews</span>
+            </a>
+            <a class="ib-tcell ib-tcell-score" href="https://uk.trustpilot.com/review/zingafs.com">
+                <span class="ib-stars ib-stars-tp" aria-hidden="true"><span class="ib-tp-sq"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+</span><span class="ib-tp-sq"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+</span><span class="ib-tp-sq"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+</span><span class="ib-tp-sq"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+</span><span class="ib-tp-sq"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-star"></use></svg>
+</span></span>
+                <span class="ib-tval">5.0</span>
+                <span class="ib-tlabel">from 224 Trustpilot reviews</span>
+            </a>
+                            <a class="ib-tcell ib-tcell-jump" href="#enquiry" data-scroll-enquiry>
+                    <span class="ib-tlabel-strong">Talk to an adviser <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow-down"></use></svg>
+</span>
+                </a>
+                    </div>
+    </div>
 </div>
 
     
-    <section class="container hp-section ip-intro" aria-labelledby="answer-h">
-        <div class="stack">
-            <p class="hp-eyebrow">The short answer</p>
-            <h2 id="answer-h" class="hp-h2">Remortgage, explained.</h2>
-            
-            <div class="byline">
-                <p>Written by the Zinga Financial Services team<br>Updated <time datetime="2026-09-26">26 September 2026</time></p>
-            </div>
-        </div>
-        <div class="ip-intro-text">
-            <p class="ip-answer" data-answer>When a fixed or tracker deal ends, most lenders move you onto their standard variable rate, which is often higher. You can usually secure a new deal up to six months in advance — either with your current lender (a product transfer) or by moving to a new one. We compare both and explain any costs of switching.</p>
-                            <p><strong class="strong">Who this is for:</strong> Homeowners whose deal ends within the next six months, anyone wanting to borrow more for improvements, or those wanting to change the term or add or remove a name.</p>
+    <section class="ib-band ib-band-white ib-answer" aria-labelledby="answer-h">
+        <div class="container ib-answer-grid">
+            <div class="ib-answer-col">
+                                    <p class="ib-chip ib-chip-client"><svg class="ib-i ib-chip-i" aria-hidden="true" focusable="false"><use href="#i-speech"></use></svg>
+<span>My deal is ending soon</span></p>
+                                <div class="ib-reply ib-r">
+                    <p class="ib-label">The short answer</p>
+                    <h2 class="ib-h2" id="answer-h"><strong>Remortgaging</strong>, explained.</h2>
+                    <p class="ib-answer-text" data-answer>When a fixed or tracker deal ends, most lenders move you onto their standard variable rate, which is often higher. You can usually secure a new deal up to six months in advance — either with your current lender (a product transfer) or by moving to a new one. We compare both and explain any costs of switching.</p>
+                                            <hr class="ib-rule">
+                        <h3 class="ib-h3">Who it's for</h3>
+                        <p class="ib-who">Homeowners whose deal ends within the next six months, anyone wanting to borrow more for improvements, or those wanting to change the term or add or remove a name.</p>
+                                        
+                    <p class="byline ib-byline">Written by the Zinga Financial Services team · Updated <time datetime="2026-09-26">26 September 2026</time></p>
+                </div>
+                            </div>
+                            <div class="ib-calc-col">
+                    <h3 class="ib-label">Try a calculator</h3>
+                                            <article class="ib-calc ib-r">
+                            <div class="ib-calc-head"><span class="ib-calc-icon"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-calc"></use></svg>
+</span><h4 class="ib-calc-t">Remortgage savings</h4></div>
+                            <p class="ib-calc-d">Compare your current payment with a new rate, after fees.</p>                                                            <p class="ib-calc-l">You'll enter</p>
+                                <ul class="ib-calc-ins">
+                                    <li>Balance left</li><li>Years left</li><li>Current rate</li><li>New rate</li><li>Fees to switch</li>                                </ul>
+                                                        <a class="btn btn-go ib-calc-go" href="../calculators/remortgage-calculator/" data-event="calculator_click" data-location="service_answer">Open<span class="ib-wide"> calculator</span><span class="sr-only">: Remortgage savings</span> <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</a>
+                        </article>
+                                            <article class="ib-calc ib-r">
+                            <div class="ib-calc-head"><span class="ib-calc-icon"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-calc"></use></svg>
+</span><h4 class="ib-calc-t">Overpayments</h4></div>
+                            <p class="ib-calc-d">See how much interest and time you could save by paying a little extra.</p>                                                            <p class="ib-calc-l">You'll enter</p>
+                                <ul class="ib-calc-ins">
+                                    <li>Balance left</li><li>Interest rate</li><li>Years left</li><li>Extra each month</li>                                </ul>
+                                                        <a class="btn btn-go ib-calc-go" href="../calculators/overpayment-calculator/" data-event="calculator_click" data-location="service_answer">Open<span class="ib-wide"> calculator</span><span class="sr-only">: Overpayments</span> <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</a>
+                        </article>
+                                    </div>
                     </div>
     </section>
 
     
-            <section class="container hp-section" aria-labelledby="options-h">
-            <div class="hp-section-head">
-                <h2 id="options-h" class="hp-h2">Your options</h2>
-                <p class="hp-side-lede">Your adviser compares these with you and explains the trade-offs before you decide.</p>
-            </div>
-            <div class="hp-pillars">
-                                    <div class="hp-pillar">
-                        <span class="hp-num">01</span>
-                        <h3 class="hp-h4">Product transfer</h3>
-                        <p class="muted">A new deal with your current lender — usually quicker, with fewer checks.</p>
-                    </div>
-                                    <div class="hp-pillar">
-                        <span class="hp-num">02</span>
-                        <h3 class="hp-h4">Move to a new lender</h3>
-                        <p class="muted">A full application, which may open up a better-suited deal.</p>
-                    </div>
-                                    <div class="hp-pillar">
-                        <span class="hp-num">03</span>
-                        <h3 class="hp-h4">Borrow more</h3>
-                        <p class="muted">Raise funds for home improvements, subject to affordability.</p>
-                    </div>
-                            </div>
-        </section>
-    
-    
-            <section class="container hp-section" aria-labelledby="steps-h">
-            <p class="hp-eyebrow">How it works</p>
-            <h2 id="steps-h" class="hp-h2 hp-narrow">From first call to completion.</h2>
-            <ol class="hp-steps">
-                                    <li>
-                        <span class="hp-step-num">01</span>
-                        <h3 class="hp-h4">Review your current deal</h3>
-                        <p class="muted">We check your end date, balance and any early repayment charge.</p>
-                    </li>
-                                    <li>
-                        <span class="hp-step-num">02</span>
-                        <h3 class="hp-h4">Compare options</h3>
-                        <p class="muted">We look at your current lender’s offers alongside the wider market.</p>
-                    </li>
-                                    <li>
-                        <span class="hp-step-num">03</span>
-                        <h3 class="hp-h4">Secure the new deal</h3>
-                        <p class="muted">We apply in advance so the new rate starts when the old one ends.</p>
-                    </li>
-                                    <li>
-                        <span class="hp-step-num">04</span>
-                        <h3 class="hp-h4">Switch over</h3>
-                        <p class="muted">Legal work, if needed, is handled so there’s no gap.</p>
-                    </li>
-                            </ol>
-        </section>
-    
-    
-            <section class="ip-band" aria-labelledby="costs-h">
-            <div class="container ip-band-grid">
-                <div class="stack">
-                    <p class="hp-eyebrow">Before you start</p>
-                    <h2 id="costs-h" class="hp-h2">Costs and risks to know about.</h2>
-                    <div class="ip-band-media"><img src="../storage/stock/guide-1.jpg" alt=""  width="900"   height="900"         loading="lazy" decoding="async"  >
-</div>
+            <section class="ib-band ib-band-paper" aria-labelledby="options-h">
+            <div class="container">
+                <div class="ib-sec-head ib-r">
+                    <p class="ib-chip ib-chip-on-tint"><svg class="ib-i ib-chip-i" aria-hidden="true" focusable="false"><use href="#i-speech"></use></svg>
+<span>What are my options?</span></p>
+                    <h2 class="ib-h2" id="options-h">Your <strong>remortgage</strong> options.</h2>
                 </div>
-                <div class="ip-band-list">
-                                            <div class="ip-band-item">
-                            <h3 class="hp-h4">Costs to budget for</h3>
-                            <ul class="ip-ticks">
-                                                                    <li>Early repayment charge, if leaving before your deal ends</li>
-                                                                    <li>Lender product or arrangement fees</li>
-                                                                    <li>Legal and valuation costs (often included by lenders)</li>
-                                                                    <li>Our fee, if any — explained in writing first</li>
+                <ul class="ib-opts">
+                                            <li class="ib-opt ib-r">
+                            <span class="ib-opt-icon"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-compass"></use></svg>
+</span>
+                            <h3 class="ib-opt-t">Product transfer</h3>
+                            <p class="ib-opt-d">A new deal with your current lender — usually quicker, with fewer checks.</p>
+                            <a class="ib-btn-text ib-opt-ask" href="#enquiry" data-scroll-enquiry>Ask about this <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+<span class="sr-only">: Product transfer</span></a>
+                        </li>
+                                            <li class="ib-opt ib-r">
+                            <span class="ib-opt-icon"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-layers"></use></svg>
+</span>
+                            <h3 class="ib-opt-t">Move to a new lender</h3>
+                            <p class="ib-opt-d">A full application, which may open up a better-suited deal.</p>
+                            <a class="ib-btn-text ib-opt-ask" href="#enquiry" data-scroll-enquiry>Ask about this <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+<span class="sr-only">: Move to a new lender</span></a>
+                        </li>
+                                            <li class="ib-opt ib-r">
+                            <span class="ib-opt-icon"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-people"></use></svg>
+</span>
+                            <h3 class="ib-opt-t">Borrow more</h3>
+                            <p class="ib-opt-d">Raise funds for home improvements, subject to affordability.</p>
+                            <a class="ib-btn-text ib-opt-ask" href="#enquiry" data-scroll-enquiry>Ask about this <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+<span class="sr-only">: Borrow more</span></a>
+                        </li>
+                                    </ul>
+            </div>
+        </section>
+    
+    
+            <section class="ib-band ib-band-white" aria-labelledby="how-h">
+            <div class="container">
+                <div class="ib-sec-head ib-r">
+                    <p class="ib-chip "><svg class="ib-i ib-chip-i" aria-hidden="true" focusable="false"><use href="#i-speech"></use></svg>
+<span>What happens once I get in touch?</span></p>
+                    <h2 class="ib-h2" id="how-h">How <strong>remortgage</strong> advice&nbsp;works.</h2>
+                </div>
+                <ol class="ib-timeline ib-r">
+                                            <li class="ib-step">
+                            <span class="ib-step-n" aria-hidden="true">1</span>
+                            <div class="ib-step-body"><h3 class="ib-step-t">Review your current deal</h3><p class="ib-step-d">We check your end date, balance and any early repayment charge.</p></div>
+                        </li>
+                                            <li class="ib-step">
+                            <span class="ib-step-n" aria-hidden="true">2</span>
+                            <div class="ib-step-body"><h3 class="ib-step-t">Compare options</h3><p class="ib-step-d">We look at your current lender’s offers alongside the wider market.</p></div>
+                        </li>
+                                            <li class="ib-step">
+                            <span class="ib-step-n" aria-hidden="true">3</span>
+                            <div class="ib-step-body"><h3 class="ib-step-t">Secure the new deal</h3><p class="ib-step-d">We apply in advance so the new rate starts when the old one ends.</p></div>
+                        </li>
+                                            <li class="ib-step">
+                            <span class="ib-step-n" aria-hidden="true">4</span>
+                            <div class="ib-step-body"><h3 class="ib-step-t">Switch over</h3><p class="ib-step-d">Legal work, if needed, is handled so there’s no gap.</p></div>
+                        </li>
+                                    </ol>
+                <div class="ib-lenders">
+        <p class="ib-lenders-label">Working with 90+ lenders, including</p>
+        <ul class="ib-lenders-logos">
+                            <li><img src="../storage/stock/lenders/halifax.png" alt="Halifax" height="26" loading="lazy" decoding="async"></li>
+                            <li><img src="../storage/stock/lenders/nationwide.png" alt="Nationwide" height="26" loading="lazy" decoding="async"></li>
+                            <li><img src="../storage/stock/lenders/barclays.png" alt="Barclays" height="26" loading="lazy" decoding="async"></li>
+                            <li><img src="../storage/stock/lenders/natwest.png" alt="NatWest" height="26" loading="lazy" decoding="async"></li>
+                            <li><img src="../storage/stock/lenders/hsbc.png" alt="HSBC" height="26" loading="lazy" decoding="async"></li>
+                            <li><img src="../storage/stock/lenders/accord.png" alt="Accord Mortgages" height="26" loading="lazy" decoding="async"></li>
+                    </ul>
+    </div>
+            </div>
+        </section>
+    
+    
+            <section class="ib-band ib-band-soft" aria-labelledby="costs-h">
+            <div class="container">
+                <div class="ib-sec-head ib-r">
+                    <p class="ib-chip ib-chip-on-tint"><svg class="ib-i ib-chip-i" aria-hidden="true" focusable="false"><use href="#i-speech"></use></svg>
+<span>What will it cost, and what are the risks?</span></p>
+                    <h2 class="ib-h2" id="costs-h"><strong>Costs</strong> and <strong>risks</strong> to know&nbsp;about.</h2>
+                </div>
+                <div class="ib-costs-grid">
+                                            <div class="ib-r">
+                            <h3 class="ib-h3">Costs to budget for</h3>
+                            <ul class="ib-checklist">
+                                                                    <li><span class="ib-tick"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>
+</span><span>Early repayment charge, if leaving before your deal ends</span></li>
+                                                                    <li><span class="ib-tick"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>
+</span><span>Lender product or arrangement fees</span></li>
+                                                                    <li><span class="ib-tick"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>
+</span><span>Legal and valuation costs (often included by lenders)</span></li>
+                                                                    <li><span class="ib-tick"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg>
+</span><span>Our fee, if any — explained in writing first</span></li>
                                                             </ul>
                         </div>
-                                                                <div class="ip-band-item">
-                            <h3 class="hp-h4">Risks</h3>
-                            <p class="ip-risk">Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
-                            <p class="small muted">We explain the risks of any recommendation in writing before you proceed.</p>
+                                                                <div class="ib-riskcard ib-r">
+                            <h3 class="ib-h3">Please read</h3>
+                            <p class="ib-risk">Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
                         </div>
                                     </div>
             </div>
         </section>
     
-    
-            <section class="container hp-section hp-faq" aria-labelledby="faq-h">
-            <div class="hp-faq-side">
-                <p class="hp-eyebrow">FAQ</p>
-                <h2 id="faq-h" class="hp-h2">Questions we're often asked.</h2>
-                <p class="muted">Still unsure? <a class="strong" href="tel:02084978737">Call an adviser</a>.</p>
+    <section class="ib-band ib-band-white ib-reviews" aria-labelledby="reviews-h">
+        <div class="container">
+            <div class="ib-rhead">
+                <div>
+                    <h2 class="ib-h2" id="reviews-h">What clients say.</h2>
+                    <p class="ib-rcaption">Reviews from Zinga clients across our services.</p>                </div>
+                <a class="ib-link-arrow" href="../reviews/">Read more reviews <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</a>
             </div>
-            <div class="hp-faq-list">
-                                    <details class="faq hp-faq-item" name="service-faq"  open >
-                        <summary><span class="hp-faq-n">01</span><span>How early can I remortgage?</span></summary>
-                        <p>Many lenders let you secure a new rate up to six months before your current deal ends.</p>
-                    </details>
-                                    <details class="faq hp-faq-item" name="service-faq" >
-                        <summary><span class="hp-faq-n">02</span><span>Will I pay an early repayment charge?</span></summary>
-                        <p>Only if you leave before your current deal ends. We check your mortgage terms before recommending anything.</p>
-                    </details>
-                                    <details class="faq hp-faq-item" name="service-faq" >
-                        <summary><span class="hp-faq-n">03</span><span>Can I remortgage to borrow more?</span></summary>
-                        <p>Often, yes — subject to affordability, your property value and what the money is for.</p>
-                    </details>
-                            </div>
-        </section>
-    
-    
-    <section class="hp-enquiry" id="enquiry" aria-labelledby="enquiry-h">
-        <div class="container hp-enquiry-grid">
-            <div class="hp-enquiry-side">
-                <p class="hp-eyebrow">Mortgage enquiry</p>
-                <h2 id="enquiry-h" class="hp-h2">Talk to an adviser about remortgage.</h2>
-                <p class="hp-lede">An adviser will be in touch to talk through your options.</p>
-                <ol class="hp-progress-list"  data-progress-list >
-                    <li class="is-current"><span>1</span>What you need</li>
-                    <li class=""><span>2</span>Property details</li>
-                    <li class=""><span>3</span>Your details</li>
-                    <li class=""><span>✓</span>Adviser follow-up</li>
-                </ol>
-                                <div class="hp-form-trust">
-                    <p class="hp-mini-head">Why people enquire with us</p>
-                    <ul>
-                        <li>A named adviser and case handler look after your case</li>
-                        <li>We compare lenders across the market, not just one bank</li>
-                        <li>FCA regulated — firm reference 752191</li>
-                        <li>Phone, WhatsApp or in person</li>
-                    </ul>
-                </div>
-                                <p class="hp-secure small muted">Your details are kept secure and only used to handle your enquiry.</p>
-            </div>
-
-            <div class="hp-form-card">
-                                    <form class="hp-form" method="POST" action="#" novalidate data-enquiry>
-                        <input type="hidden" name="_token" value="" autocomplete="off">                        <input type="hidden" name="origin" value="inline">
-                        <input type="hidden" name="return_to" value="/remortgage">
-                        <div class="hp-bar" aria-hidden="true"><span data-bar></span></div>
-
-                        
-                        
-                        <fieldset class="hp-step" data-step="1">
-                            <legend><span class="hp-step-label">01 / 03</span><span class="hp-h3">What do you need?</span></legend>
-                            <div class="hp-options">
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Buying a home" >
-                                        <span><strong>Buy my first home</strong><small>First-time buyer</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Moving home" >
-                                        <span><strong>Move home</strong><small>Selling and buying</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Remortgage" checked>
-                                        <span><strong>Remortgage</strong><small>Switch or release equity</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Buy-to-let" >
-                                        <span><strong>Buy to let</strong><small>Personal or limited company</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Commercial" >
-                                        <span><strong>Commercial</strong><small>Business premises</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Second charge" >
-                                        <span><strong>Second charge</strong><small>Secured loan</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Protection" >
-                                        <span><strong>Protection</strong><small>Life, income, home</small></span>
-                                    </label>
-                                                                    <label class="hp-option">
-                                        <input type="radio" name="need" value="Not sure yet" >
-                                        <span><strong>Something else</strong><small>Talk it through</small></span>
-                                    </label>
-                                                            </div>
-                                                    </fieldset>
-
-                        
-                        <fieldset class="hp-step" data-step="2">
-                            <legend><span class="hp-step-label">02 / 03 <span data-need-label></span></span><span class="hp-h3">Mortgage &amp; property details</span></legend>
-                            <p class="small muted">Rough figures are fine — you can skip anything you're not sure about.</p>
-                            <div class="hp-two">
-                                <label class="field "><span data-label-value>Property value / purchase price <span class="optional">(optional)</span></span>
-                                    <span class="hp-money"><span aria-hidden="true">£</span><input name="property_value" inputmode="numeric" autocomplete="off" placeholder="350,000" value="" maxlength="12"></span>
-                                                                    </label>
-                                <label class="field "><span data-label-amount>Amount you'd like to borrow <span class="optional">(optional)</span></span>
-                                    <span class="hp-money"><span aria-hidden="true">£</span><input name="loan_amount" inputmode="numeric" autocomplete="off" placeholder="280,000" value="" maxlength="12"></span>
-                                                                    </label>
-                            </div>
-                            <div class="hp-pills-field">
-                                <span class="strong">When are you looking to proceed?</span>
-                                <div class="radio-chips">
-                                                                            <label><input type="radio" name="timeline" value="As soon as possible" ><span>As soon as possible</span></label>
-                                                                            <label><input type="radio" name="timeline" value="Within 3 months" ><span>Within 3 months</span></label>
-                                                                            <label><input type="radio" name="timeline" value="3–6 months" ><span>3–6 months</span></label>
-                                                                            <label><input type="radio" name="timeline" value="Just researching" ><span>Just researching</span></label>
-                                                                    </div>
-                            </div>
-                        </fieldset>
-
-                        
-                        <fieldset class="hp-step" data-step="3">
-                            <legend><span class="hp-step-label">03 / 03</span><span class="hp-h3">Your contact details</span></legend>
-                            <label class="field ">Full name
-                                <input name="name" value="" autocomplete="name" maxlength="100" required>
-                                                            </label>
-                            <div class="hp-two">
-                                <label class="field ">Phone
-                                    <input name="phone" type="tel" value="" autocomplete="tel" maxlength="20" required>
-                                                                    </label>
-                                <label class="field "><span>Email <span class="optional">(required for email contact)</span></span>
-                                    <input name="email" type="email" value="" autocomplete="email" maxlength="255">
-                                                                    </label>
-                            </div>
-                            <div class="hp-pills-field">
-                                <span class="strong">Best way to reach you</span>
-                                <div class="radio-chips">
-                                                                            <label><input type="radio" name="contact_preference" value="Phone" checked><span>Phone</span></label>
-                                                                            <label><input type="radio" name="contact_preference" value="Email" ><span>Email</span></label>
-                                                                            <label><input type="radio" name="contact_preference" value="WhatsApp" ><span>WhatsApp</span></label>
-                                                                    </div>
-                            </div>
-                            <label class="check">
-                                <input type="checkbox" name="consent" value="1" >
-                                <span>I agree to Zinga Financial Services contacting me about my enquiry and processing my details in line with the <a href="../privacy-policy/">privacy policy</a>.</span>
-                            </label>
-                            
-                            
-                            <div class="hp-field" aria-hidden="true">
-                                <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-                            </div>
-                            <input type="hidden" name="form_token" value="eyJpdiI6IlY4clF3TFFvSnAzY0RBbDdDSVpOcnc9PSIsInZhbHVlIjoiRjlIbkxPWWdYcDFQbkxRaG5WVkFKUT09IiwibWFjIjoiYTgwMzU0ZDU1ZDllNmQzZTRkMmIyOWQ1MzRmNzEyNmM3ZmIzZjc1NjBmN2U1MWVhNDYzOGQ5YjE4Mjg5NWZkYiIsInRhZyI6IiJ9">
-                        </fieldset>
-
-                        <p class="error hp-step-error" data-step-error role="alert" hidden></p>
-
-                        <div class="hp-controls">
-                            <button type="button" class="btn btn-outline" data-back hidden>← Back</button>
-                            <span class="small muted" data-hint>No credit check. No obligation.</span>
-                            <button type="button" class="btn btn-go btn-lg" data-next hidden>Next →</button>
-                            <button type="submit" class="btn btn-go btn-lg" data-submit data-event="callback_submit" data-location="home_enquiry">Send my enquiry →</button>
-                        </div>
-                    </form>
-                            </div>
-        </div>
-    </section>
-
-    
-    <section class="container hp-section ip-related" aria-labelledby="related-h">
-                    <figure class="hp-quote ip-quote">
-                <span class="hp-quote-mark" aria-hidden="true">“</span>
-                <blockquote>From the very start, she was clear, patient, and took the time to explain every step in plain language so I always knew exactly where I stood.</blockquote>
-                <figcaption><strong>Fozia Yaqoob</strong> <span class="muted">Trustpilot review</span> <a class="small strong" href="../reviews/">More reviews →</a></figcaption>
+            <figure class="ib-rfeat ib-r">
+                <span class="ib-rfeat-mark" aria-hidden="true">“</span>
+                <blockquote class="ib-rfeat-q"><p>From the very start, she was clear, patient, and took the time to explain every step in plain language so I always knew exactly where I stood.</p></blockquote>
+                <figcaption class="ib-rfeat-by">
+                    <span class="ib-srcb ib-srcb-trustpilot"><span class="ib-srcb-dot" aria-hidden="true"></span>Trustpilot review</span>
+                    <span class="ib-rname">Fozia Yaqoob</span>
+                </figcaption>
             </figure>
-                <div class="stack">
-            <h2 id="related-h" class="hp-h4">Related</h2>
-            <ul class="ip-related-list">
-                                    <li><a href="../calculators/remortgage-calculator/" data-event="calculator_click" data-location="service_related"><span>Calculator</span>Remortgage savings</a></li>
-                                    <li><a href="../calculators/overpayment-calculator/" data-event="calculator_click" data-location="service_related"><span>Calculator</span>Overpayments</a></li>
-                                                    <li><a href="../guides/when-to-start-looking-at-a-remortgage/"><span>Guide</span>When should I start looking at a remortgage?</a></li>
-                                    <li><a href="../guides/what-is-an-early-repayment-charge/"><span>Guide</span>What is an early repayment charge, and when does it apply?</a></li>
-                                                    <li><a href="../personal-protection/"><span>Protection</span>Protecting your mortgage and family</a></li>
-                                <li><a href="../areas-we-serve/"><span>Local advice</span>Local mortgage advice across the UK</a></li>
-            </ul>
+                            <ul class="ib-rgrid ib-rgrid-3">
+                                            <li class="ib-rcard ib-r">
+                            <blockquote class="ib-rcard-q"><p>She was always quick to answer my questions, proactive in finding solutions, and dedicated to securing the right terms for my financial situation.</p></blockquote>
+                            <div class="ib-rcard-foot">
+                                <span class="ib-srcb ib-srcb-google"><span class="ib-srcb-dot" aria-hidden="true"></span>Google review</span>
+                                <p class="ib-rname">lovepreet singh</p>
+                            </div>
+                        </li>
+                                            <li class="ib-rcard ib-r">
+                            <blockquote class="ib-rcard-q"><p>She was always quick to respond, answered every question clearly, and made the whole mortgage process simple and stress-free.</p></blockquote>
+                            <div class="ib-rcard-foot">
+                                <span class="ib-srcb ib-srcb-google"><span class="ib-srcb-dot" aria-hidden="true"></span>Google review</span>
+                                <p class="ib-rname">ramandeep kaur</p>
+                            </div>
+                        </li>
+                                            <li class="ib-rcard ib-r">
+                            <blockquote class="ib-rcard-q"><p>Many thanks to Arifa who quickly managed to get my mortgage application in principal then fully agreed. Great service thanks for your help.</p></blockquote>
+                            <div class="ib-rcard-foot">
+                                <span class="ib-srcb ib-srcb-google"><span class="ib-srcb-dot" aria-hidden="true"></span>Google review</span>
+                                <p class="ib-rname">Samad Khan</p>
+                            </div>
+                        </li>
+                                    </ul>
+                    </div>
+    </section>
+
+    <section class="ib-band ib-band-paper ib-faqs" aria-labelledby="faq-h">
+        <div class="container ib-narrow-col">
+            <div class="ib-faq-head ib-r">
+                <h2 class="ib-h2" id="faq-h"><strong>Remortgage</strong> questions.</h2>
+                <p class="muted">Didn't find your answer? Ask us directly.</p>
+            </div>
+            <div class="ib-faq-stack">
+                                    <details class="ib-faq ib-r" name="service-faq"  open >
+                        <summary><span class="ib-faq-q">How early can I remortgage?</span><span class="ib-faq-i" aria-hidden="true"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-plus"></use></svg>
+</span></summary>
+                        <div class="ib-faq-a"><p>Many lenders let you secure a new rate up to six months before your current deal ends.</p></div>
+                    </details>
+                                    <details class="ib-faq ib-r" name="service-faq" >
+                        <summary><span class="ib-faq-q">Will I pay an early repayment charge?</span><span class="ib-faq-i" aria-hidden="true"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-plus"></use></svg>
+</span></summary>
+                        <div class="ib-faq-a"><p>Only if you leave before your current deal ends. We check your mortgage terms before recommending anything.</p></div>
+                    </details>
+                                    <details class="ib-faq ib-r" name="service-faq" >
+                        <summary><span class="ib-faq-q">Can I remortgage to borrow more?</span><span class="ib-faq-i" aria-hidden="true"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-plus"></use></svg>
+</span></summary>
+                        <div class="ib-faq-a"><p>Often, yes — subject to affordability, your property value and what the money is for.</p></div>
+                    </details>
+                            </div>
+            <div class="ib-faq-strip ib-r">
+                <p class="ib-faq-strip-t">Still unsure?</p>
+                <div class="ib-faq-strip-a">
+                    <a class="btn btn-go" href="#enquiry" data-scroll-enquiry>Request a callback</a>
+                    <a class="ib-link-plain" href="mailto:hello@zingafs.com">Email hello@zingafs.com</a>                </div>
+            </div>
         </div>
     </section>
-</div>
+
+    <section class="ib-band ib-band-white ib-talk" id="enquiry" aria-labelledby="enquiry-h">
+    <div class="container">
+        <h2 class="ib-h2" id="enquiry-h">Talk to an adviser.</h2>
+        <div class="ib-talk-grid">
+            <div class="ib-contact ib-r">
+                <p class="ib-contact-t">Prefer to talk now?</p>
+                <p class="ib-contact-s">We reply within 2 working hours.</p>
+                <div class="ib-contact-btns">
+                    <a class="btn ib-btn-line" href="tel:02084978737" data-event="call_click" data-location="talk"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-phone"></use></svg>
+<span>Call<span class="ib-wide"> 0208 497 8737</span></span></a>
+                                            <a class="btn ib-btn-line" href="https://wa.me/442084978737" rel="noopener" target="_blank" data-event="whatsapp_click" data-location="talk"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-whatsapp"></use></svg>
+ WhatsApp</a>
+                                    </div>
+                <hr class="ib-rule">
+                <p class="ib-contact-hours"><svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-clock"></use></svg>
+<span>Mon–Fri 9am–6pm</span></p>
+                <a class="ib-link-arrow" href="../our-team/">Meet the team <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</a>
+            </div>
+            <div class="hp-form-card">
+            <form class="hp-form" method="POST" action="#" novalidate data-enquiry>
+            <input type="hidden" name="_token" value="" autocomplete="off">            <input type="hidden" name="origin" value="inline">
+            <input type="hidden" name="return_to" value="/remortgage">
+            <div class="hp-bar" aria-hidden="true"><span data-bar></span></div>
+
+            
+            
+            <fieldset class="hp-step" data-step="1">
+                <legend><span class="hp-step-label">01 / 03</span><span class="hp-h3">What do you need?</span></legend>
+                <div class="hp-options">
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Buying a home" >
+                            <span><strong>Buy my first home</strong><small>First-time buyer</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Moving home" >
+                            <span><strong>Move home</strong><small>Selling and buying</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Remortgage" checked>
+                            <span><strong>Remortgage</strong><small>Switch or release equity</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Buy-to-let" >
+                            <span><strong>Buy to let</strong><small>Personal or limited company</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Commercial" >
+                            <span><strong>Commercial</strong><small>Business premises</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Second charge" >
+                            <span><strong>Second charge</strong><small>Secured loan</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Protection" >
+                            <span><strong>Protection</strong><small>Life, income, home</small></span>
+                        </label>
+                                            <label class="hp-option">
+                            <input type="radio" name="need" value="Not sure yet" >
+                            <span><strong>Something else</strong><small>Talk it through</small></span>
+                        </label>
+                                    </div>
+                            </fieldset>
+
+            
+            <fieldset class="hp-step" data-step="2">
+                <legend><span class="hp-step-label">02 / 03 <span data-need-label></span></span><span class="hp-h3">Mortgage &amp; property details</span></legend>
+                <p class="small muted">Rough figures are fine — you can skip anything you're not sure about.</p>
+                <div class="hp-two">
+                    <label class="field "><span data-label-value>Property value / purchase price <span class="optional">(optional)</span></span>
+                        <span class="hp-money"><span aria-hidden="true">£</span><input name="property_value" inputmode="numeric" autocomplete="off" placeholder="350,000" value="" maxlength="12"></span>
+                                            </label>
+                    <label class="field "><span data-label-amount>Amount you'd like to borrow <span class="optional">(optional)</span></span>
+                        <span class="hp-money"><span aria-hidden="true">£</span><input name="loan_amount" inputmode="numeric" autocomplete="off" placeholder="280,000" value="" maxlength="12"></span>
+                                            </label>
+                </div>
+                <div class="hp-pills-field">
+                    <span class="strong">When are you looking to proceed?</span>
+                    <div class="radio-chips">
+                                                    <label><input type="radio" name="timeline" value="As soon as possible" ><span>As soon as possible</span></label>
+                                                    <label><input type="radio" name="timeline" value="Within 3 months" ><span>Within 3 months</span></label>
+                                                    <label><input type="radio" name="timeline" value="3–6 months" ><span>3–6 months</span></label>
+                                                    <label><input type="radio" name="timeline" value="Just researching" ><span>Just researching</span></label>
+                                            </div>
+                </div>
+            </fieldset>
+
+            
+            <fieldset class="hp-step" data-step="3">
+                <legend><span class="hp-step-label">03 / 03</span><span class="hp-h3">Your contact details</span></legend>
+                <label class="field ">Full name
+                    <input name="name" value="" autocomplete="name" maxlength="100" required>
+                                    </label>
+                <div class="hp-two">
+                    <label class="field ">Phone
+                        <input name="phone" type="tel" value="" autocomplete="tel" maxlength="20" required>
+                                            </label>
+                    <label class="field "><span>Email <span class="optional">(required for email contact)</span></span>
+                        <input name="email" type="email" value="" autocomplete="email" maxlength="255">
+                                            </label>
+                </div>
+                <div class="hp-pills-field">
+                    <span class="strong">Best way to reach you</span>
+                    <div class="radio-chips">
+                                                    <label><input type="radio" name="contact_preference" value="Phone" checked><span>Phone</span></label>
+                                                    <label><input type="radio" name="contact_preference" value="Email" ><span>Email</span></label>
+                                                    <label><input type="radio" name="contact_preference" value="WhatsApp" ><span>WhatsApp</span></label>
+                                            </div>
+                </div>
+                <label class="check">
+                    <input type="checkbox" name="consent" value="1" >
+                    <span>I agree to Zinga Financial Services contacting me about my enquiry and processing my details in line with the <a href="../privacy-policy/">privacy policy</a>.</span>
+                </label>
+                
+                
+                <div class="hp-field" aria-hidden="true">
+                    <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                </div>
+                <input type="hidden" name="form_token" value="eyJpdiI6IkFOamVRNE9ibTNZeHhpZkEvT2Nhcmc9PSIsInZhbHVlIjoiUG1MSDF1VlhUeVJka1BVd05PZkJ5UT09IiwibWFjIjoiOTUxOWY0YmEwNTA0N2E5ZDQ5OTRjOWYzMDQzZDZmZTJmZmUwODI0ZWRmNzM1N2VmYjAzZjlhOTY2Y2MxMjg1NiIsInRhZyI6IiJ9">
+            </fieldset>
+
+            <p class="error hp-step-error" data-step-error role="alert" hidden></p>
+
+            <div class="hp-controls">
+                <button type="button" class="btn btn-outline" data-back hidden>← Back</button>
+                <span class="small muted" data-hint>No credit check. No obligation.</span>
+                <button type="button" class="btn btn-go btn-lg" data-next hidden>Next →</button>
+                <button type="submit" class="btn btn-go btn-lg" data-submit data-event="callback_submit" data-location="home_enquiry">Send my enquiry →</button>
+            </div>
+        </form>
+    </div>
+        </div>
+    </div>
+</section>
+
+    
+            <section class="ib-band ib-band-soft ib-also" aria-labelledby="also-h">
+            <div class="container">
+                <h2 class="ib-h2" id="also-h">Also worth a <strong>conversation</strong>.</h2>
+                <ul class="ib-also-grid">
+                                            <li class="ib-also-tile ib-r"><a href="../personal-protection/">
+                            <img src="../storage/stock/service-personal-protection.jpg" alt=""  width="1200"   height="800"         loading="lazy" decoding="async"  >
+                            <span class="ib-also-t">Personal protection <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</span>
+                            <span class="ib-also-d">Life, income and critical illness cover, reviewed with your mortgage.</span>
+                        </a></li>
+                                            <li class="ib-also-tile ib-r"><a href="../home-insurance/">
+                            <img src="../storage/stock/service-home-insurance.jpg" alt=""  width="1200"   height="800"         loading="lazy" decoding="async"  >
+                            <span class="ib-also-t">Home insurance <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</span>
+                            <span class="ib-also-d">Buildings and contents cover, arranged alongside your mortgage.</span>
+                        </a></li>
+                                            <li class="ib-also-tile ib-r"><a href="../buy-to-let-mortgage/">
+                            <img src="../storage/stock/service-buy-to-let.jpg" alt=""  width="1200"   height="800"         loading="lazy" decoding="async"  >
+                            <span class="ib-also-t">Buy-to-let <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</span>
+                            <span class="ib-also-d">Buy-to-let purchases, remortgages and how rental income is assessed.</span>
+                        </a></li>
+                                            <li class="ib-also-tile ib-r"><a href="../commercial/">
+                            <img src="../storage/stock/service-commercial.jpg" alt=""  width="1200"   height="800"         loading="lazy" decoding="async"  >
+                            <span class="ib-also-t">Commercial <svg class="ib-i" aria-hidden="true" focusable="false"><use href="#i-arrow"></use></svg>
+</span>
+                            <span class="ib-also-d">Shops, offices and mixed-use premises — and whether your case fits.</span>
+                        </a></li>
+                                    </ul>
+            </div>
+        </section>
+    </div>
     </main>
 
         <footer class="site-footer">
