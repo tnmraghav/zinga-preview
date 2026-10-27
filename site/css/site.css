@@ -1619,17 +1619,31 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
 .ib-faq-strip-t { margin: 0; font-family: var(--hp-display); font-weight: 700; font-size: 17px; }
 .ib-faq-strip-a { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; }
 
-/* talk to an adviser */
-.ib-talk > .container > .ib-h2 { margin-bottom: 32px; }
-.ib-talk-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 40px; align-items: start; }
-.ib-contact { padding: 32px; background: var(--ib-paper); border-radius: 20px; }
-.ib-contact-t { margin: 0; font-family: var(--hp-display); font-weight: 700; font-size: 20px; line-height: 1.3; }
-.ib-contact-s { margin: 2px 0 18px; font-size: 15px; color: var(--ib-muted); }
-.ib-contact-btns { display: flex; flex-wrap: wrap; gap: 10px; }
-.ib-contact-btns .btn { min-height: 48px; padding: 0 16px; font-size: 15px; }
-.ib-contact-hours { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; font-size: 14px; color: var(--ib-muted); }
-.ib-contact-hours .ib-i { width: 18px; height: 18px; }
-.ib-talk .hp-form-card { min-height: 0; box-shadow: var(--ib-sh-card); }
+/* talk to an adviser: one card, a logo-navy panel beside the live form */
+.ib-talk-card { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); overflow: hidden; background: #fff; border: 1px solid var(--ib-line); border-radius: 24px; box-shadow: 0 40px 80px -48px rgba(0, 26, 64, .55); }
+.ib-talk-side { display: flex; flex-direction: column; gap: 32px; padding: 44px 40px; color: #fff; background: radial-gradient(120% 70% at 0% 0%, rgba(0, 186, 255, .2) 0%, rgba(0, 186, 255, 0) 60%), var(--logo-navy); }
+.ib-talk-eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--logo-blue); }
+.ib-talk-eyebrow::before { content: ""; width: 28px; height: 3px; border-radius: 2px; background: var(--logo-blue); }
+.ib-talk-h { color: #fff; }
+.ib-talk-lede { margin: 12px 0 0; max-width: 380px; font-size: 16px; line-height: 1.55; color: #c9d6e6; }
+.ib-talk-steps { margin: 0; }
+.ib-talk-steps li { border-top-color: rgba(255, 255, 255, .14); color: #9fb2c8; }
+.ib-talk-steps li:last-child { border-bottom: 1px solid rgba(255, 255, 255, .14); }
+.ib-talk-steps li span { background: transparent; border-color: rgba(255, 255, 255, .35); color: #c9d6e6; }
+.ib-talk-steps li.is-current { color: #fff; }
+.ib-talk-steps li.is-current span { background: var(--logo-blue); border-color: var(--logo-blue); color: var(--logo-navy); }
+.ib-talk-steps li.is-done span { background: #fff; border-color: #fff; color: var(--logo-navy); }
+.ib-talk-now { margin-top: auto; }
+.ib-talk-now-t { margin: 0 0 12px; font-family: var(--hp-display); font-weight: 700; font-size: 18px; color: #fff; }
+.ib-talk-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.ib-talk-btns .btn { min-height: 48px; padding: 0 18px; font-size: 15px; }
+.ib-talk-team { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 10px; color: var(--logo-blue); font-weight: 700; font-size: 15px; text-decoration: none; }
+.ib-talk-team .ib-i { width: 18px; height: 18px; transition: transform .18s; }
+.ib-talk-team:hover { color: #fff; }
+.ib-talk-team:hover .ib-i { transform: translateX(3px); }
+.ib-talk-card .hp-form-card { min-height: 0; border: 0; border-radius: 0; box-shadow: none; }
+.ib-talk :focus-visible { outline-color: var(--logo-blue); }
+.ib-talk .hp-form-card :focus-visible { outline-color: var(--ib-navy); }
 
 /* also worth a conversation */
 .ib-also .ib-h2 { margin-bottom: 32px; }
@@ -1657,6 +1671,8 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
 .ib-visitcard .ib-link-arrow { margin-top: 6px; }
 .ib-visit-hours { display: flex; align-items: center; gap: 8px; margin: 6px 0 20px; font-size: 15px; color: var(--ib-muted); }
 .ib-visit-hours .ib-i { width: 18px; height: 18px; }
+.ib-contact-btns { display: flex; flex-wrap: wrap; gap: 10px; }
+.ib-contact-btns .btn { min-height: 48px; padding: 0 16px; font-size: 15px; }
 .ib-hcards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin: 0; padding: 0; list-style: none; }
 .ib-hcard a { display: flex; flex-direction: column; height: 100%; overflow: hidden; background: #fff; border: 1px solid var(--ib-line); border-radius: 14px; color: var(--ib-ink); text-decoration: none; transition: box-shadow .2s, border-color .2s; }
 .ib-hcard a:hover { box-shadow: var(--ib-sh-card); border-color: #c9d6e3; color: var(--ib-ink); }
@@ -1687,7 +1703,10 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
   .ib-band { padding: 64px 0; }
   .ib-talk { padding: 64px 0; }
   .ib-also { padding: 56px 0; }
-  .ib-answer-grid, .ib-costs-grid, .ib-talk-grid, .ib-visit-grid { grid-template-columns: 1fr; gap: 32px; }
+  .ib-answer-grid, .ib-costs-grid, .ib-visit-grid { grid-template-columns: 1fr; gap: 32px; }
+  .ib-talk-card { grid-template-columns: 1fr; }
+  .ib-talk-side { gap: 24px; padding: 32px 28px; }
+  .ib-talk-steps { display: none; } /* the form shows its own progress */
   .ib-opts, .ib-rgrid, .ib-rgrid-2 { grid-template-columns: 1fr; gap: 12px; }
   .ib-opt { min-height: 0; }
   .ib-timeline { grid-auto-flow: row; grid-template-columns: 1fr; gap: 0; }
@@ -1764,11 +1783,10 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
   .ib-faq-a { padding: 0 18px 18px; }
   .ib-faq-strip { flex-direction: column; align-items: stretch; padding: 18px; }
   .ib-faq-strip-a .btn { width: 100%; }
-  .ib-contact { padding: 18px; }
-  .ib-contact .ib-rule { display: none; }
-  .ib-contact-hours { margin-top: 14px; }
-  .ib-contact-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-  .ib-contact-btns .btn { padding: 0 8px; font-size: 14px; }
+  .ib-contact-btns, .ib-talk-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ib-contact-btns .btn, .ib-talk-btns .btn { padding: 0 8px; font-size: 14px; }
+  .ib-talk-card { border-radius: 18px; }
+  .ib-talk-side { padding: 26px 20px; }
   .ib-also-grid, .ib-hcards { gap: 12px; }
   .ib-also-tile a { padding: 14px; }
   .ib-also-tile img { height: 72px; }
