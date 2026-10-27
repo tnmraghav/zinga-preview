@@ -69,14 +69,16 @@
     form.elements.email.required = form.elements.contact_preference.value === 'Email';
   }
 
+  // Steps are checked by their data-step number, since protection pages leave out step 2 (property details).
   function validate(i) {
-    if (i === 0 && !selectedNeed()) return 'Please choose what you need.';
-    if (i === 1) {
+    var step = steps[i] ? steps[i].getAttribute('data-step') : '';
+    if (step === '1' && !selectedNeed()) return 'Please choose what you need.';
+    if (step === '2') {
       var pv = form.elements.property_value.value, la = form.elements.loan_amount.value;
       if (pv && digits(pv).length < 4) return 'Please enter the property value in pounds, e.g. 350,000.';
       if (la && digits(la).length < 4) return 'Please enter the amount in pounds, e.g. 280,000.';
     }
-    if (i === 2) {
+    if (step === '3') {
       if (form.elements.name.value.trim().length < 2) return 'Please enter your name.';
       var d = digits(form.elements.phone.value);
       if (d.length < 10 || d.length > 13) return 'Please enter a UK phone number we can call.';
@@ -116,6 +118,7 @@
     // Format money fields as the user types (350000 → 350,000).
     ['property_value', 'loan_amount'].forEach(function (name) {
       var el = form.elements[name];
+      if (!el) return;
       el.addEventListener('input', function () {
         var d = digits(el.value).slice(0, 9);
         el.value = d ? Number(d).toLocaleString('en-GB') : '';
