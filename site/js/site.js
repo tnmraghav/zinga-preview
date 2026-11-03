@@ -134,7 +134,7 @@
 
   // ---- Header shadow once the page scrolls ---------------------------------
   if (header) {
-    var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); document.body.classList.toggle('scrolled-page', window.scrollY > 500); };
+    var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
