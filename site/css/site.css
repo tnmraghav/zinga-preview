@@ -1691,6 +1691,21 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
 .ib-pill-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #fff; border: 1px solid var(--ib-line); color: var(--ib-ink); text-decoration: none; font-weight: 600; font-size: 15px; }
 .ib-pill-link:hover { border-color: var(--ib-ink); color: var(--ib-ink); }
 .ib-help .ib-lenders { margin-top: 36px; background: #fff; border: 1px solid var(--ib-line); }
+/* "About {area}" with an at-a-glance card (Manooch, 3 Nov) */
+.ib-about-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+.ib-about .ib-sec-head { margin-bottom: 28px; }
+.ib-about-p { margin: 0 0 16px; color: var(--ib-muted); text-wrap: pretty; }
+.ib-about-p:first-of-type { font-size: 17.5px; color: var(--ib-ink); }
+.ib-about-near { margin-top: 28px; }
+.ib-about-near ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+.ib-about-near li { padding: 6px 14px; border-radius: 999px; background: var(--ib-soft); border: 1px solid var(--ib-line); font-size: 14.5px; font-weight: 600; line-height: 1.4; }
+.ib-snap { padding: 30px 32px; border-radius: 20px; color: #fff; background: radial-gradient(90% 120% at 0% 0%, rgba(0, 186, 255, .18) 0%, rgba(0, 186, 255, 0) 55%), var(--logo-navy); }
+.ib-snap .ib-label { color: var(--logo-blue); }
+.ib-snap dl { margin: 18px 0 0; }
+.ib-snap dl div { padding: 14px 0; border-top: 1px solid rgba(255, 255, 255, .14); }
+.ib-snap dl div:first-child { padding-top: 0; border-top: 0; }
+.ib-snap dt { font-size: 13.5px; color: #c9d6e6; }
+.ib-snap dd { margin: 2px 0 0; font-family: var(--hp-display); font-weight: 700; font-size: 17px; line-height: 1.35; }
 
 @media (min-width: 640px) and (max-width: 1180px) {
   .ib-tbar .ib-tcell { padding-inline: 20px; }
@@ -1709,7 +1724,7 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
   .ib-why-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
   .ib-talk { padding: 64px 0; }
   .ib-also { padding: 56px 0; }
-  .ib-answer-grid, .ib-costs-grid, .ib-visit-grid { grid-template-columns: 1fr; gap: 32px; }
+  .ib-answer-grid, .ib-costs-grid, .ib-visit-grid, .ib-about-grid { grid-template-columns: 1fr; gap: 32px; }
   .ib-talk-card { grid-template-columns: 1fr; }
   .ib-talk-side { gap: 24px; padding: 32px 28px; }
   .ib-talk-steps { display: none; } /* the form shows its own progress */
@@ -1726,6 +1741,8 @@ a.ib-tcell:hover { background: #fafbfc; color: var(--ib-ink); }
 }
 @media (max-width: 639px) {
   .ib-page { font-size: 16px; line-height: 1.55; }
+  .ib-about-p:first-of-type { font-size: 16.5px; }
+  .ib-snap { padding: 24px; }
   .ib-band { padding: 40px 0; }
   .ib-why { padding-top: 28px; }
   .ib-why + .ib-band { padding-top: 40px; }
