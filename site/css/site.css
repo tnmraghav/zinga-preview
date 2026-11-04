@@ -1257,7 +1257,9 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 .hp-local:has(.hp-local-list li:nth-child(3):hover) .hp-local-media figure:nth-child(3),
 .hp-local:has(.hp-local-list li:nth-child(4):hover) .hp-local-media figure:nth-child(4),
 .hp-local:has(.hp-local-list li:nth-child(5):hover) .hp-local-media figure:nth-child(5),
-.hp-local:has(.hp-local-list li:nth-child(6):hover) .hp-local-media figure:nth-child(6) { opacity: 1; visibility: visible; transform: none; }
+.hp-local:has(.hp-local-list li:nth-child(6):hover) .hp-local-media figure:nth-child(6),
+.hp-local:has(.hp-local-list li:nth-child(7):hover) .hp-local-media figure:nth-child(7),
+.hp-local:has(.hp-local-list li:nth-child(8):hover) .hp-local-media figure:nth-child(8) { opacity: 1; visibility: visible; transform: none; }
 
 /* Insights */
 .hp-insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 32px; }
