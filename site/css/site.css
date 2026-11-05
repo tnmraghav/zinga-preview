@@ -1300,8 +1300,11 @@ html.hf-jakarta .hd-punct { margin-left: -.07em; }
 /* Mobile bar with WhatsApp; floating WhatsApp on desktop, shown from the start (Manooch, 3 Nov) */
 @media (max-width: 999px) {
   .mobile-bar.has-wa { grid-template-columns: auto auto 1fr; }
-  .mobile-bar.has-wa .btn-outline { padding: 0 16px; }
+  .mobile-bar.has-wa .btn-outline, .mobile-bar .btn-wa { padding: 0 16px; }
 }
+/* WhatsApp green in the mobile bar, the same as the desktop button (Manooch, 5 Nov) */
+.btn-wa { border: 1.5px solid #0c7f50; background: #0c7f50; color: #fff; }
+.btn-wa:hover, .btn-wa:focus-visible { border-color: #0a6b43; background: #0a6b43; color: #fff; }
 .wa-float {
   position: fixed; right: 24px; bottom: 24px; z-index: 45; display: none; align-items: center; gap: 10px;
   background: #0c7f50; color: #fff; padding: 14px 20px; border-radius: 30px; font-weight: 700; font-size: 15px; text-decoration: none;
